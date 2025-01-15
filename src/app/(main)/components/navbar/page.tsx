@@ -3,7 +3,7 @@ import Link from "next/link";
 export default function Navbar() {
     return (
        <div>
-        <nav className ="mb-10 bg-red-800 p-4 border-b-8 border-red-400">
+        <nav className ="text-creamy bg-iterationOfPurple p-6">
             <ul className = "flex space-x-56">
                 <li>
                     <Link href="/">Home</Link>
@@ -16,6 +16,9 @@ export default function Navbar() {
                 </li>
                 <li>
                     <Link href="/skills">Skills</Link> 
+                </li>
+                <li>
+                    <Link href="/CS_Resume.pdf">Resume</Link>
                 </li>
                 {/* Add resume + linkedin later */}
             </ul>
