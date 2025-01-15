@@ -17,8 +17,8 @@ export default function main() {
   <div className="flex text-4xl justify-center">
     <p>blah blah</p>
   </div>
-  <div className="top-3 right-5 fixed  flex justify-end"> {/* fix-- put guide in center */}
-    <Image className ="hover:animate-bounce" src="/tercharry.png" width={200} height={200} alt="Guide Terraria"></Image>
+  <div className=""> {/* fix-- put guide in center */}
+    <Image className ="" src="/tercharry.png" width={200} height={200} alt="Guide Terraria"></Image>
   </div>
   </>
   );

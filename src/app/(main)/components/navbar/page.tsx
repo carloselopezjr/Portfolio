@@ -3,7 +3,7 @@ import Link from "next/link";
 export default function Navbar() {
     return (
        <div>
-        <nav className ="text-creamy bg-iterationOfPurple p-6">
+        <nav className ="fixed top-0 left-0 right-0 text-creamy bg-iterationOfPurple p-6">
             <ul className = "flex space-x-56">
                 <li>
                     <Link href="/">Home</Link>

@@ -25,9 +25,11 @@ export default function Projects() {
         <div>
             {project.map((proj, index) => (
                 <div key={index}>
-                    <h2>{proj.name}</h2>
+                    <h2 className ="flex justify-center mt-20">{proj.name}</h2>
+                    <h1></h1>
                 </div>
             ))}
         </div>
+
     );
 }
