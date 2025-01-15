@@ -1,6 +1,6 @@
 
 
-export default function() {
+export default function Skills() {
     return (
         <div>
         skills, nigga

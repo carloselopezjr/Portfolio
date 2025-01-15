@@ -1,3 +1,7 @@
+import Image from "next/image";
+
+
+
 export default function main() {
   return(
   <>
@@ -6,7 +10,7 @@ export default function main() {
     <h2> I'm an undergraduate student at the University of Central Florida. I am currently in my first year </h2>
   </div>
   <div className="">
-    <img src="https://i.pinimg.com/736x/a7/55/89/a75589953b431144fc71348d983783bd.jpg" className="w-50 h-20 animate-spin" alt="ok"></img>
+    <Image src="/testing.jpg" width={150} height={150} className="animate-spin" alt="ok"></Image>
   </div>
   </>
   );

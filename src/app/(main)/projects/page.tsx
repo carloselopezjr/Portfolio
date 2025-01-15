@@ -1,6 +1,6 @@
 
 
-export default function project() {
+export default function projects() {
     return (
         <div>
             project
