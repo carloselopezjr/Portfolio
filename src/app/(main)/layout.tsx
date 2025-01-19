@@ -1,12 +1,12 @@
 import type { Metadata } from "next";
-import { Gelasio } from "next/font/google";
+import { Noto_Sans } from "next/font/google";
 import "./globals.css";
 import Navbar from "./components/navbar/page";
 
 
 
-const GelasioSans = Gelasio({
-  variable: "--font-Gelasio-sans",
+const Noto_SansSans = Noto_Sans({
+  variable: "--font-Noto_Sans-sans",
   subsets: ["latin"],
 });
 
@@ -24,7 +24,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${GelasioSans.className} text-creamy antialiased`}
+        className={`${Noto_SansSans.className} text-creamy antialiased`}
       >
         <Navbar/>
         {children}

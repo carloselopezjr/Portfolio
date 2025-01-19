@@ -19,17 +19,13 @@ const project = [
     },
 ];
 
-
+{/* Add border + background for "Projects" Text", then add a border for the projects themselves */}
 export default function Projects() {
     return (
-        <div>
-            {project.map((proj, index) => (
-                <div key={index}>
-                    <h2 className ="flex justify-center mt-20">{proj.name}</h2>
-                    <h1></h1>
-                </div>
-            ))}
+        <div className= "flex p-5">
+            <h1 className="font-bold absolute p-5 mt-20 mr-96 text-4xl">
+                Projects
+            </h1>
         </div>
-
     );
 }
