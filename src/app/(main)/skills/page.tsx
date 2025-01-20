@@ -1,4 +1,3 @@
-import { platform } from "os";
 
 const languages = [
     {
