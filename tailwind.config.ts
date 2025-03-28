@@ -13,7 +13,7 @@ export default {
   theme: {
     extend: {
       colors: {
-        iterationOfPurple: "#1e102e",
+        Purp: "#1e102e",
         creamy: "#f7f6c5",
         background: "var(--background)",
         foreground: "var(--foreground)",

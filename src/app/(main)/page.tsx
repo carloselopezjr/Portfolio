@@ -8,7 +8,7 @@ export default function main() {
   return (
     <>
       <div className="flex justify-center mt-24 p-5">
-        <h1 className="animation font-bold p-5 bg-iterationOfPurple rounded-xl text-6xl">
+        <h1 className="animation font-bold p-5 bg-Purp rounded-xl text-6xl">
           <Typewriter
             words={["Yo...I'm Carlos!"]}
             loop={1}
@@ -17,7 +17,7 @@ export default function main() {
         </h1>
       </div>
       <div className="m-4 text-4xl flex justify-center">
-        <h2 className="font-semibold rounded-xl bg-iterationOfPurple p-5">
+        <h2 className="font-semibold rounded-xl bg-Purp p-5">
           I&apos;m a first year at the University of Central Florida
         </h2>
       </div>
