@@ -23,7 +23,7 @@ const project = [
 export default function Projects() {
     return (
         <div className= "flex p-5">
-            <h1 className="font-bold absolute p-5 mt-20 mr-96 text-4xl">
+            <h1 className="font-bold absolute p-5 mt-20 mr-96 text-4xl bg-iterationOfPurple rounded-xl">
                 Projects
             </h1>
         </div>

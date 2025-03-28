@@ -1,73 +1,18 @@
 
-const languages = [
-    {
-        name: "C",
-        image: "placeholder",
-    },
-    {
-        name: "C#",
-        image: "placeholder",
-    },
-    {
-        name: "Python",
-        image: "placeholder",
-    },
-    {
-        name: "JavaScript",
-        image: "placeholder",
-    },
-    {
-        name: "TypeScript",
-        image: "placeholder",
-    },
-    {
-        name: "HTML",
-        image: "placeholder",
-    },
-    {
-        name: "CSS",
-        image: "placeholder",
-    },
-]
 
-const packages = [
-    {
-        name: "React",
-        image: "placeholder",
-    },
-    {
-        name: "Next.js",
-        image: "placeholder",
-    },
-    {
-        name: "Tailwind",
-        image: "placeholder",
-    },
-    {
-        name: "Node.js",
-        image: "placeholder",
-    },
-]
-
-const tools = [
-    {
-        name: "Git",
-        image: "placeholder",
-    },
-    {
-        name: "GitHub",
-        image: "placeholder",
-    },
-    {
-        name: "VSCode",
-        image: "placeholder",
-    },
-    {
-        name: "Blender",
-        image: "placeholder",
-    },
-    {
-        name: "Vercel",
-        image: "placeholder",
-    }
-]
+export default function Skills() {
+    return (
+        <>
+        <div className= "flex p-5">
+            <h1 className="font-bold absolute p-5 mt-44 mr-96 text-4xl bg-iterationOfPurple rounded-xl">
+                Skills
+            </h1>
+        </div>
+        <div className="p-4">
+            <h2 className = "font-semibold flex p-5 absolute mt-56 bg-iterationOfPurple rounded-xl text-xl">
+                Throughout my time as a developer, I've worked with a variety of languages, packages, and tools. Here are some of the ones I'm most familiar with:
+            </h2>
+        </div>
+        </>
+    );
+}
