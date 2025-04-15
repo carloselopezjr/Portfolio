@@ -18,7 +18,7 @@ export default function main() {
       </div>
       <div className="m-4 text-4xl flex justify-center">
         <h2 className="font-semibold rounded-xl bg-Purp p-5">
-          I&apos;m a first year at the University of Central Florida
+          I&apos;m a first year at twoeufhweufhweiufhweiufhweiuhfiuwehdckwebhkjwhfkjwhefkjwheciuhewiuchwekjfhhe University of Central Florida
         </h2>
       </div>
       <div className="flex items-center justify-center">
