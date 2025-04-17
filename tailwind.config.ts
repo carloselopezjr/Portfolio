@@ -13,13 +13,14 @@ export default {
   theme: {
     extend: {
       colors: {
-        Purp: "#1e102e",
+        purp: "#1e102e",
         creamy: "#f7f6c5",
+        lpurp: "#332a5a",
         background: "var(--background)",
         foreground: "var(--foreground)",
       },
       keyframes: {
-        fadeIn: {
+        fadeIn: { 
           "0%": { opacity: "0" },
           "100%": { opacity: "1" },
         },

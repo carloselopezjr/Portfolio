@@ -4,7 +4,7 @@ import { DynamicIcon } from "lucide-react/dynamic";
 export default function Navbar() {
     return (
        <div>
-        <nav className ="text-lg font-semibold fixed top-0 left-0 right-0 text-creamy bg-Purp p-6">
+        <nav className ="text-lg font-semibold fixed top-0 left-0 right-0 text-creamy bg-purp p-6">
             <ul className = "flex space-x-8"> {/* Make it so that when someone clicks on a different page, it remains underlined */}
                 <li className ="mr-auto hover:animate-pulse duration-300"> 
                     <Link href="/">Carlos E. Lopez</Link>

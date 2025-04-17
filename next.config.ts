@@ -1,9 +1,8 @@
-import type { NextConfig } from "next";
+/**
+ * @type {import('next').NextConfig}
+ */
+const nextConfig = {
+  // Clean setup — no deprecated configs
+}
 
-const nextConfig: NextConfig = {
-  images: {
-    domains: []
-  }
-};
-
-export default nextConfig;
+module.exports = nextConfig;
