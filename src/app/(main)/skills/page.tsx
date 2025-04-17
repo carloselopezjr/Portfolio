@@ -10,7 +10,7 @@ export default function Skills() {
         </div>
         <div className="p-4">
             <h2 className = "font-semibold flex p-5 absolute mt-56 bg-Purp rounded-xl text-xl">
-                Throughout my time as a developer, I've worked with a variety of languages, packages, and tools. Here are some of the ones I'm most familiar with:
+                hello
             </h2>
         </div>
         </>

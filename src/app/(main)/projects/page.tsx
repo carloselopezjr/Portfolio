@@ -1,25 +1,4 @@
-"use client";
-
-const project = [
-    {
-        name: "The Underground",
-        description: "terraria mod using c#",
-        image: "placeholder",
-        skillsUsed: "C#",
-    },
-    {
-        name: "Spark-A-Hack",
-        description: "Hackathon project",
-        image: "placeholder",
-        skillsUsed: "React, Tailwind, Gemini API, TRPC",
-    },
-    {
-        name: "Portfolio",
-        description: "This website",
-        image: "placeholder",
-        skillsUsed: "Next.js, Tailwind",
-    },
-];
+"use client"
 
 {/* Add border + background for "Projects" Text", then add a border for the projects themselves */}
 export default function Projects() {
