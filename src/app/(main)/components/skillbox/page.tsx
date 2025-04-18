@@ -1,6 +1,6 @@
 import Image from "next/image";
 
-export const Languages = [
+const Languages = [
   { name: "Python", icon: "images/python.svg" },
   { name: "C#", icon: "images/csharp.svg" },
   { name: "C", icon: "images/c.svg" },
@@ -10,7 +10,7 @@ export const Languages = [
   { name: "TypeScript", icon: "images/typescript.svg" },
 ];
 
-export const FrameworksPackages = [
+const FrameworksPackages = [
   { name: "React", icon: "images/react.svg" },
   { name: "Next.js", icon: "images/next.svg" },
   { name: "Tailwind CSS", icon: "images/tailwind.svg" },
@@ -18,7 +18,7 @@ export const FrameworksPackages = [
   { name: "Node.js", icon: "images/node.svg" },
 ];
 
-export const Tools = [
+const Tools = [
   { name: "Git", icon: "images/git.svg" },
   { name: "GitHub", icon: "images/github.svg" },
   { name: "Visual Studio Code", icon: "images/vscode.svg" },
