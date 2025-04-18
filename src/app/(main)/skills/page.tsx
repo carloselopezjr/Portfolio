@@ -1,18 +1,15 @@
+import Skillbox from "../components/skillbox/page";
 
 
 export default function Skills() {
-    return (
-        <>
-        <div className= "flex p-5">
-            <h1 className="font-bold absolute p-5 mt-44 mr-96 text-4xl bg-Purp rounded-xl">
-                Skills
-            </h1>
-        </div>
-        <div className="p-4">
-            <h2 className = "font-semibold flex p-5 absolute mt-56 bg-Purp rounded-xl text-xl">
-                hello
-            </h2>
-        </div>
-        </>
-    );
+  return (
+    <div className="justify-center mt-24 p-4">
+      <h2 className="text-xl text-center m-4 opacity-90">
+        {"Throughout my journey as a Student Engineer, I've acquired quite a few skills! Here they are:"}
+      </h2>
+      <div className="grid items-center justify-center">
+        <Skillbox />
+      </div>
+    </div>
+  );
 }
