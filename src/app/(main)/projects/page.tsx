@@ -1,12 +1,12 @@
-"use client"
+import ProjectBox from "../components/projectsbox/page";
 
-{/* Add border + background for "Projects" Text", then add a border for the projects themselves */}
+
 export default function Projects() {
     return (
-        <div className="mt-60 justify-center flex">
-            <div className=" border-8 border-creamy bg-purp w-80 h-80 hover:bg-purp animation duration-500 ease-in-out hover:scale-100 p-4">
-                <p className="">in progress </p>
-            </div>
+        <div className="mt-24 p-4 justify-center text-center">
+            <h1 className="text-4xl font-bold"> Projects </h1>
+            <h2 className="text-xl m-4 opacity-90"> Here are the projects yea  </h2>
+            <ProjectBox/>
         </div>
     
     );
