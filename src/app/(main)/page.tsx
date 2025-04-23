@@ -8,7 +8,7 @@ export default function main() {
     <>
       <div className="flex justify-center mt-24 p-5 ">
         <h1 className="border-purple-900 border-4 bg-purp animation font-bold p-5 bg-Purp rounded-xl text-6xl hover:bg-purple-900 animation duration-500 ease-in-out hover:scale-110">
-          <Typewriter words={["Yo...Im Carlos!"]} loop={1} typeSpeed={85} />
+          <Typewriter words={["Hi I'm Carlos!"]} loop={1} typeSpeed={85} />
         </h1>
       </div>
       <div className="text-3xl flex justify-center">
@@ -21,12 +21,13 @@ export default function main() {
         <div className="border-purple-900 bg-purp p-4 rounded-xl border-2 hover:bg-purple-900 animation duration-500 ease-in-out hover:scale-110">
           <h3 className="font-bold text-2xl"> About me: </h3>
           <ul className="text-lg p-4">
-            <li className=""> Computer Science Major </li>
-            <li>
+            <li className="p-1"> Computer Science Major </li>
+            <li className="p-1"> Relevant classes: Programming with Python, Programming with C, Calculus I, Calculus II </li>
+            <li className="p-1">
               Undergraduate Research Assistant under the Analytics, Decisions,
               and Control Lab at UCF
             </li>
-            <li>Currently working on: My Portfolio!</li>
+            <li className="p-1">Currently working on: My Portfolio!</li>
           </ul>
         </div>
       </div>
