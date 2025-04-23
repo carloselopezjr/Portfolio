@@ -9,8 +9,12 @@ export default function Navbar() {
                 <li className ="mr-auto hover:animate-pulse duration-300"> 
                     <Link href="/">Carlos E. Lopez</Link>
                 </li>
+                
                 <li className = "hover:opacity-70  transition-all duration-300">
                     <Link href="/">Home</Link>
+                </li>
+                <li className ="hover:animate-pulse duration-300">
+                    <Link href="/assignments">Resume, Cover Letter, Mini-Interview </Link>
                 </li>
                 <li className="hover:opacity-70  transition-all duration-300">
                     <Link href="/projects">Projects</Link>
