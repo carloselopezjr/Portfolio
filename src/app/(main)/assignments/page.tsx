@@ -6,7 +6,7 @@ const assignments = [
     link: "/CS_Resume.pdf",
   },
   {
-    name: "CV",
+    name: "Cover Letters",
     link: "/cover_letter.pdf",
   },
   {

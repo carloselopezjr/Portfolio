@@ -11,21 +11,33 @@ export default function Navbar() {
                     <Link href="/">Carlos E. Lopez</Link>
                 </li>
                 
-                <li className = "hover:opacity-70  transition-all duration-300">
+                <li className = "hover:opacity-70 duration-300">
                     <Link href="/">Home</Link>
                 </li>
-                <li className ="hover:animate-pulse duration-300">
+                <li className= "hover:opacity-70 duration-300">
+                    <Link href="/instructions">Instructions</Link>
+                </li>
+                <li className ="hover:opacity-70 duration-300">
                     <Link href="/assignments">Resume, Cover Letter, Mini-Interview </Link>
                 </li>
+                <li className="hover:opacity-70 duration-300">
+                    <Link href="/proposal">Proposal</Link>
+                </li>
+
+
+
+                {/* This  class is silly
                 <li className="hover:opacity-70  transition-all duration-300">
                     <Link href="/projects">Projects</Link>
                 </li>
+                
                 <li className ="hover:opacity-70  transition-all duration-300">
                     <Link href="/experience">Experience</Link>
                 </li>
                 <li className="hover:opacity-70  transition-all duration-300">
                     <Link href="/skills">Skills</Link> 
                 </li>
+                */}
                 <li className="hover:opacity-60 transition-all duration-300">
                     <Link href="/CS_Resume.pdf"><DynamicIcon name="file-text"/></Link>
                 </li>
