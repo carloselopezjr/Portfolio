@@ -8,14 +8,17 @@ export default function enc() {
       </h2>
       <h3 className="text-center text-sm opacity-90">
         {` These instructions provide a brief understanding of how to mod Terraria
-        using tModLoader,
-        <br /> an expansion of Terraria that allows users to create their own
+        using tModLoader, `}
+        <br />
+        {`
+        
+         an expansion of Terraria that allows users to create their own
         custom content `}
       </h3>
       <div className="flex justify-center">
         <embed
           className="border-4 p-4 border-purple-950 rounded-xl bg-purp"
-          src="/instructions.pdf"
+          src="/Instructions.pdf"
           type="application/pdf"
           width="900px"
           height="900px"
