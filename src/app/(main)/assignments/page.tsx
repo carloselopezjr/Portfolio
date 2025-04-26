@@ -6,12 +6,12 @@ const assignments = [
     link: "/CS_Resume.pdf",
   },
   {
-    name: "Cover Letters",
+    name: "Cover Letter",
     link: "/cover_letter.pdf",
   },
   {
     name: "Mini-Interview",
-    link: "https://youtu.be/r6WfIsmyS7M",
+    link: "https://youtu.be/rd6WfIsmyS7M",
   },
 ];
 
@@ -19,7 +19,9 @@ const assignments = [
 {/* boxes should all be the same size fix later */}
 export default function enc() {
   return (
-    <div className="grid grid-cols-2 text-center justify-center mt-40">
+    <div>
+      <h1 className="font-bold text-2xl mt-28 text-center "> Below are redirects to my Resume, Cover Letter, and Mini-Interview! </h1>
+    <div className="mt-2 grid grid-cols-2 text-center justify-center ">
       {assignments.map((assignment, index) => (
         <div 
         key={assignment.name} 
@@ -29,11 +31,12 @@ export default function enc() {
         >
           <Link 
           href={assignment.link} 
-          className="p-20">
+          className="text-lg font-semibold p-40 hover:underline hover:opacity-70">
             {assignment.name}
           </Link>
         </div>
       ))}
+    </div>
     </div>
   );
 }
