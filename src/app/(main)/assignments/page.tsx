@@ -11,7 +11,7 @@ const assignments = [
   },
   {
     name: "Mini-Interview",
-    link: "https://youtu.be/rd6WfIsmyS7M",
+    link: "https://www.youtube.com/watch?v=r6WfIsmyS7M", // fix link tmr
   },
 ];
 
@@ -21,17 +21,17 @@ export default function enc() {
   return (
     <div>
       <h1 className="font-bold text-2xl mt-28 text-center "> Below are redirects to my Resume, Cover Letter, and Mini-Interview! </h1>
-    <div className="mt-2 grid grid-cols-2 text-center justify-center ">
+    <div className="mt-40 grid grid-cols-2 text-center justify-center ">
       {assignments.map((assignment, index) => (
         <div 
         key={assignment.name} 
-        className={`m-4 p-20 bg-purp border-purple-900 border-2 rounded-xl " ${
-            index === 2 ? "col-span-2 justify-self-center" : ""
+        className={`" ${
+            index === 2 ? "mr-3 col-span-2 justify-self-center" : ""
         }`}
         >
           <Link 
           href={assignment.link} 
-          className="text-lg font-semibold p-40 hover:underline hover:opacity-70">
+          className=" p-20 bg-purp border-purple-900 border-2 rounded-xl text-lg font-semibold hover:underline hover:bg-purple-900 animation duration-500 ease-in-out">
             {assignment.name}
           </Link>
         </div>
