@@ -21,8 +21,6 @@ and digital design—communicate
         <embed
           className="border-4 p-4 border-purple-950 rounded-xl bg-purp"
           src="/Proposal.pdf"
-          title="Proposal"
-          alt="Proposal"
           type="application/pdf"
           width="900px"
           height="900px"
