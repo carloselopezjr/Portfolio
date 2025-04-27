@@ -14,7 +14,7 @@ export default function main() {
       <div className="text-3xl flex justify-center">
         <h2 className="hover:bg-purple-900 animation duration-500 ease-in-out hover:scale-110 border-2 rounded-xl border-purple-900 bg-purp font-semibold bg-Purp p-5">
           I&apos;m a first year at The University of Central Florida
-        </h2>
+        </h2> 
       </div>
 
       <div className="flex justify-center items-center p-4">
@@ -32,42 +32,14 @@ export default function main() {
         </div>
       </div>
 
-      <div className="flex justify-center items-center p-4 ">
-        <div className="w-full max-w-3xl border-purple-900 bg-purp p-4 rounded-xl border-2 hover:bg-purple-900 animation duration-500 ease-in-out hover:scale-110">
-          <h2 className="font-semibold text-xl">
-            Portfolio Progress Reflection:
-          </h2>
-          <p className="text-lg p-4">
-            {`Portfolio progress has been very smooth. I've been using Next.Js and
-            Typescript to create it and I'm having fun expanding my knowledge on
-            the framework. I'm honestly glad that this was an assignment as I
-            started working on my portfolio earlier in Janury, I just never got
-            around to completing it. As I've been doing my portfolio I've been
-            reflecting on all of the things I've learned this semester,
-            reminiscing over the time when I was "lost in the sauce" and had no
-            idea how mapping in typescript worked,or the concept of a
-            component...`}
-          </p> 
-          <p className="text-lg p-4">
-            {`I like the design I've curated so far. Since this is my first
-            attempt at a portfolio it is a bit minimalistic, but I like how it
-            is right now, especially the color palette I've decided to go with.
-            In my future versions I plan to add more "life" to it and make it
-            feel more personal/unique to me. The differing fonts I've been using
-            have added to the overall clarity of my page and I'm proud of myself
-            for how it is coming out.`}
-          </p>
-          <p className="text-lg p-4">
-            {`Throughout this process, I've strengthened my understanding of HTML,
-            CSS, Typescript, and Next.Js. More specifically, I've begun to grasp
-            the concept of mapping and overall site structure (padding, margins,
-            borders etc.) The most confusing concept has been site structure, as
-            it is visual heavy and relies on understanding how elements are
-            positioned relative to one another. That being said however, a
-            resource I've been taking full advantage of is the developer tools
-            on Google Chrome. It allows me to see my site structure in real time
-            and locate which element is affecting the layout.`}
-          </p>
+     <div className="flex justify-center mt-2">
+        <div className="border-purple-900 bg-purp p-5 rounded-xl border-2 hover:bg-purple-900 animation duration-500 ease-in-out hover:scale-110">
+          <h3 className="text-2xl font-bold mb-4 text-center">Technical Skills</h3>
+          <ul className="list-disc list-inside space-y-2">
+            <li><strong>Programming Languages:</strong> Python, C, C#, HTML, CSS, JavaScript, TypeScript</li>
+            <li><strong>Libraries/Frameworks:</strong> Tkinter, React, Next, Tailwind, Uploadthing, ClerkAuth</li>
+            <li><strong>Tools/Platforms:</strong> Command Prompt, Windows, VS Code, IDLE, Vercel, Railway, Github, Git, CodeBlocks</li>
+          </ul>
         </div>
       </div>
 
