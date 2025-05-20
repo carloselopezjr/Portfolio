@@ -6,7 +6,7 @@ import { Typewriter } from "react-simple-typewriter";
 export default function main() {
   return (
     <>
-      <div className="flex justify-center mt-24 p-5 ">
+      <div className="flex justify-center mt-8 p-4 ">
         <h1 className="border-purple-900 border-4 bg-purp animation font-bold p-5 bg-Purp rounded-xl text-6xl hover:bg-purple-900 animation duration-500 ease-in-out hover:scale-110">
           <Typewriter words={["Hi I'm Carlos!"]} loop={1} typeSpeed={85} />
         </h1>

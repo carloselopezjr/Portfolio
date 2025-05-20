@@ -2,17 +2,18 @@ import Image from "next/image";
 
 const Languages = [
   { name: "Python", icon: "images/python.svg" },
-  { name: "C#", icon: "images/csharp.svg" },
+  { name: "C#", icon: "images/fd.svg" },
   { name: "C", icon: "images/c.svg" },
   { name: "HTML", icon: "images/html.svg" },
   { name: "CSS", icon: "images/css.svg" },
   { name: "JavaScript", icon: "images/javascript.svg" },
   { name: "TypeScript", icon: "images/typescript.svg" },
+  { name: "Lua", icon: "images/lua.svg" }
 ];
 
 const FrameworksPackages = [
   { name: "React", icon: "images/react.svg" },
-  { name: "Next.js", icon: "images/next.svg" },
+  { name: "Next.js", icon: "images/nextjs.svg" },
   { name: "Tailwind CSS", icon: "images/tailwind.svg" },
   { name: ".Net", icon: "images/NET.svg" },
   { name: "Node.js", icon: "images/node.svg" },
