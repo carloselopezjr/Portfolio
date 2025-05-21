@@ -1,65 +1,173 @@
 import Image from "next/image";
 
-
 const Projects = [
   {
     name: "Riffs",
     image: "/images/riffs.png",
     date: "Apr 2025 - Apr 2025",
-    stack: "",
+    stack: [
+      {
+        name: "TypeScript",
+        img: "/images/typescript.svg",
+      },
+      {
+        name: "TailwindCSS",
+        img: "/images/tailwind.svg",
+      },
+      {
+        name: "React",
+        img: "/images/react.svg",
+      },
+      {
+        name: "Next.js",
+        img: "/images/next.svg",
+      },
+      {
+        name: "FL Studio",
+        img: "/images/fff.webp",
+      },
+    ],
     description:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut eget augue vestibulum, eleifend dui eu, efficitur libero. Suspendisse tempus, nisl accumsan ultricies vulputate, metus justo mollis dui, quis malesuada nisi ante laoreet ex. Etiam scelerisque volutpat posuere. Sed imperdiet ipsum dui, id molestie ex pellentesque non. Quisque lacinia pellentesque ex, eget porttitor eros rutrum sed. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Curabitur pellentesque lorem at diam cursus, at suscipit turpis pharetra. Sed vitae odio ac tortor varius egestas sed quis nunc. Praesent vestibulum, quam eget laoreet scelerisque, dolor justo hendrerit dui, dignissim pulvinar ligula purus quis tellus. Donec id volutpat massa. Vestibulum bibendum lorem eu nunc vulputate euismod. Mauris viverra velit ac sapien elementum tincidunt. Praesent convallis convallis odio. Nullam posuere vitae ligula eget venenatis. Curabitur efficitur vestibulum ante eu pretium.",
+      "     Riffs is a creative music app where you can hum a melody, convert it into guitar tabs, edit it, and jam out in a Guitar Hero-style game-play experience.",
   },
   {
     name: "Kmodo",
     image: "/images/kmodo.webp",
     date: "Jan 2025 - Apr 2025",
-    stack: "",
+    stack: [
+      {
+        name: "React",
+        img: "/images/react.svg",
+      },
+      {
+        name: "TailwindCSS",
+        img: "/images/tailwind.svg",
+      },
+      {
+        name: "TypeScript",
+        img: "/images/typescript.svg",
+      },
+      {
+        name: "Next.js",
+        img: "/images/next.svg",
+      },
+      {
+        name: "tRPC",
+        img: "/images/trpc.svg",
+      },
+      {
+        name: "Drizzle",
+        img: "/images/drizzle.svg",
+      },
+      {
+        name: "PostgreSQL",
+        img: "/images/postgreSQL.svg",
+      },
+      {
+        name: "Python",
+        img: "/images/python.svg",
+      },
+    ],
     description:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut eget augue vestibulum, eleifend dui eu, efficitur libero. Suspendisse tempus, nisl accumsan ultricies vulputate, metus justo mollis dui, quis malesuada nisi ante laoreet ex. Etiam scelerisque volutpat posuere. Sed imperdiet ipsum dui, id molestie ex pellentesque non. Quisque lacinia pellentesque ex, eget porttitor eros rutrum sed. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Curabitur pellentesque lorem at diam cursus, at suscipit turpis pharetra. Sed vitae odio ac tortor varius egestas sed quis nunc. Praesent vestibulum, quam eget laoreet scelerisque, dolor justo hendrerit dui, dignissim pulvinar ligula purus quis tellus. Donec id volutpat massa. Vestibulum bibendum lorem eu nunc vulputate euismod. Mauris viverra velit ac sapien elementum tincidunt. Praesent convallis convallis odio. Nullam posuere vitae ligula eget venenatis. Curabitur efficitur vestibulum ante eu pretium.",
+      "Kmodo is a centralized hackathon dashboard designed to unify and streamline the hackathon experience. It brings event creation, organization, and participation into one cohesive platform, making hackathons more accessible and enjoyable.",
   },
   {
     name: "My Portfolio",
     image: "/images/vergil.gif",
     date: "Jan 2025 - Present",
-    stack: "",
+    stack: [
+      {
+        name: "Next.js",
+        img: "/images/next.svg",
+      },
+      {
+        name: "TailwindCSS",
+        img: "/images/tailwind.svg",
+      },
+      {
+        name: "TypeScript",
+        img: "/images/typescript.svg",
+      },
+      {
+        name: "React",
+        img: "/images/react.svg",
+      },
+    ],
     description: "port port port port",
-    },
+  },
   {
     name: "Spark-A-Hack",
     image: "/images/spark-a-hack.webp",
     date: "Sep 2024 - Nov 2024",
-    stack: "",
+    stack: [
+      {
+        name: "Gemini API",
+        img: "/images/gemini.svg",
+      },
+      {
+        name: "React",
+        img: "/images/react.svg",
+      },
+      {
+        name: "Python",
+        img: "/images/python.svg",
+      },
+      {
+        name: "TailwindCSS",
+        img: "/images/tailwind.svg",
+      }
+      ,
+      {
+        name: "TypeScript",
+        img: "/images/typescript.svg",
+      },
+      {
+        name: "Next.js",
+        img: "/images/next.svg",
+      },
+    ],
     description:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut eget augue vestibulum, eleifend dui eu, efficitur libero. Suspendisse tempus, nisl accumsan ultricies vulputate, metus justo mollis dui, quis malesuada nisi ante laoreet ex. Etiam scelerisque volutpat posuere. Sed imperdiet ipsum dui, id molestie ex pellentesque non. Quisque lacinia pellentesque ex, eget porttitor eros rutrum sed. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Curabitur pellentesque lorem at diam cursus, at suscipit turpis pharetra. Sed vitae odio ac tortor varius egestas sed quis nunc. Praesent vestibulum, quam eget laoreet scelerisque, dolor justo hendrerit dui, dignissim pulvinar ligula purus quis tellus. Donec id volutpat massa. Vestibulum bibendum lorem eu nunc vulputate euismod. Mauris viverra velit ac sapien elementum tincidunt. Praesent convallis convallis odio. Nullam posuere vitae ligula eget venenatis. Curabitur efficitur vestibulum ante eu pretium.",
+    "im sitting on the highest mountain, watching overseas."
   },
 ];
 
 export default function ProjectBox() {
-    return (
-      <div className="mt-10 flex flex-row justify-center w-full gap-4 flex-wrap">
-        {Projects.map((proj) => (
-          <div
-            key={proj.name}
-            className="scale-110 m-2 relative group w-[250px] h-[300px] border-2 border-purple-900 rounded-xl flex overflow-hidden bg-purp shadow-xl hover:transition duration-300 ease-in-out hover:scale-125 "
-          >
-            {/* hover show desc */}
-            <div className="absolute bg-gray-900 bg-opacity-100 text-white opacity-0 group-hover:opacity-100 transition-opacity duration-300 p-4 text-sm overflow-y-auto">
-              {proj.description}
-            </div>
-  
-            <span className="pb-12 flex flex-col items-center justify-center h-full w-full">
+  return (
+    <div className="mt-10 flex flex-row justify-center w-full gap-4 flex-wrap">
+      {Projects.map((proj) => (
+        <div
+          key={proj.name}
+          className="scale-110 m-4 relative group w-[250px] h-[300px] border-2 border-purple-900 rounded-xl flex overflow-hidden bg-purp shadow-xl hover:transition duration-300 ease-in-out hover:scale-125 "
+        >
+          {/* actual box 
+              at some point add hover:blur or smth */}
+          <div className="pb-12 flex flex-col items-center justify-center h-full w-full hover:blur-sm">
             <Image src={proj.image} alt={proj.name} width={150} height={150} />
             <h1 className=" text-xl font-bold mt-2">{proj.name}</h1>
             <h2 className="text-md font-semibold text-gray-600">{proj.date}</h2>
-            </span>
-
-            {/* work on this later */}
-            <h3 className="opacity-0 p-1 absolute bottom border-purple-900 bg-slate-800 rounded-md border-2"> {proj.stack}</h3>
-            
           </div>
-        ))}
-      </div>
-    );
-  }
-  
+          {/* hover show desc */}
+          <div className="inset-0 absolute bg-gray-900 bg-opacity-100 text-white opacity-0 group-hover:opacity-100 transition-opacity duration-300 p-4 text-xs">
+            <div className="p-2 h-full text-left">
+              {proj.description}
+              {proj.stack && Array.isArray(proj.stack) && (
+                <div className="mt-6 grid grid-cols-4 gap-2 place-items-center">
+                  {proj.stack.map((st, index) => (
+                    <div key={index} title={st.name} className=""> {/* customize tooltip soon */}
+                      <Image
+                        src={st.img}
+                        alt={st.name}
+                        width={45}
+                        height={45}
+                      />
+                    </div>
+                  ))}
+                </div>
+              )}
+            </div>
+          </div>
+        </div>
+      ))}
+    </div>
+  );
+}

@@ -23,7 +23,7 @@ export default function Main() {
       </div>
       <div className="text-3xl flex justify-center">
         <h2 className="hover:bg-purple-900 animation duration-500 ease-in-out hover:scale-110 border-2 rounded-xl border-purple-900 bg-purp font-semibold bg-Purp p-5">
-          I&apos;m a Sophomore at The University of Central Florida
+          A Sophomore at The University of Central Florida
         </h2> 
       </div>
       
