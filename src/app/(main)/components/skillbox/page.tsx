@@ -30,16 +30,16 @@ const Tools = [
 
 export default function SkillBox() {
   return (
-    <div className="flex flex-col w-full mt-4 p-4 gap-4">
+    <div className="scale-90 flex flex-col w-full p-4">
       <div className="flex flex-row gap-4 w-full">
         {/* Languages */}
-        <div className="flex-1 text-center rounded-xl border-4 border-purple-900 bg-purp p-4 w-1/2">
+        <div className="flex-1 text-center rounded-xl border-4 border-royalblue bg-ablue p-4 w-1/2">
           <h1 className="font-bold text-4xl mb-4">Languages</h1>
           <div className="grid grid-cols-5 gap-2 place-items-center">
             {Languages.map((lang) => (
               <div
                 key={lang.name}
-                className="p-4 rounded-xl bg-gray-950 border-purple-900 border-2 hover:bg-gray-900 transition duration-300 ease-in-out hover:scale-110"
+                className="p-4 rounded-xl bg-gray-950 border-royalblue border-2 hover:bg-gray-900 transition duration-300 ease-in-out hover:scale-110"
               >
                 <Image src={lang.icon} alt={lang.name} width={75} height={75} />
               </div>
@@ -47,13 +47,13 @@ export default function SkillBox() {
           </div>
         </div>
 
-        <div className="flex-1 text-center rounded-xl border-4 border-purple-900 bg-purp p-4 w-1/2">
+        <div className="flex-1 text-center rounded-xl border-4 border-royalblue bg-ablue p-4 w-1/2">
           <h1 className="font-bold text-4xl mb-4">Frameworks/Packages</h1>
           <div className="grid grid-cols-5 gap-2 place-items-center">
             {FrameworksPackages.map((fpack) => (
               <div
                 key={fpack.name}
-                className="p-4 rounded-xl bg-gray-950 border-purple-900 border-2 hover:bg-gray-900 transition duration-300 ease-in-out hover:scale-110"
+                className="p-4 rounded-xl bg-gray-950 border-royalblue border-2 hover:bg-gray-900 transition duration-300 ease-in-out hover:scale-110"
               >
                 <Image
                   src={fpack.icon}
@@ -67,13 +67,13 @@ export default function SkillBox() {
         </div>
       </div>
 
-      <div className=" text-center rounded-xl border-4 border-purple-900 bg-purp p-4 w-[49.5%]">
+      <div className=" text-center rounded-xl border-4 border-royalblue bg-ablue p-4 w-[49.5%]">
         <h1 className="font-bold text-4xl mb-4">Tools</h1>
         <div className="grid grid-cols-5 gap-2 place-items-center">
           {Tools.map((tool) => (
             <div
               key={tool.name}
-              className="p-4 rounded-xl bg-gray-950 border-purple-900 border-2 hover:bg-gray-900 transition duration-300 ease-in-out hover:scale-110"
+              className="p-4 rounded-xl bg-gray-950 border-royalblue border-2 hover:bg-gray-900 transition duration-300 ease-in-out hover:scale-110"
             >
               <Image src={tool.icon} alt={tool.name} width={75} height={75} />
             </div>

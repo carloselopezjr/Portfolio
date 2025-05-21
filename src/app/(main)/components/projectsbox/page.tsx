@@ -1,5 +1,6 @@
 import Image from "next/image";
 
+
 const Projects = [
   {
     name: "Riffs",
@@ -127,7 +128,7 @@ const Projects = [
       },
     ],
     description:
-    "im sitting on the highest mountain, watching overseas."
+    "Spark-A-Hack was my first Hackathon project. It leverages Gemini's API to generate winning hackathon project ideas based on over 30,000 winning submissions from DevPost. "
   },
 ];
 
@@ -137,7 +138,7 @@ export default function ProjectBox() {
       {Projects.map((proj) => (
         <div
           key={proj.name}
-          className="scale-110 m-4 relative group w-[250px] h-[300px] border-2 border-purple-900 rounded-xl flex overflow-hidden bg-purp shadow-xl hover:transition duration-300 ease-in-out hover:scale-125 "
+          className="scale-110 m-4 relative group w-[250px] h-[300px] border-2 border-[#3d5caa] rounded-xl flex overflow-hidden bg-[#2e1f47] shadow-xl hover:transition duration-300 ease-in-out hover:scale-125 hover:shadow-[0_0_12px_#aee7ff]"
         >
           {/* actual box 
               at some point add hover:blur or smth */}
@@ -149,11 +150,11 @@ export default function ProjectBox() {
             width={150} 
             height={150} 
             />
-            <h1 className=" text-xl font-bold mt-2">{proj.name}</h1>
-            <h2 className="text-md font-semibold text-gray-600">{proj.date}</h2>
+            <h1 className=" text-xl font-bold mt-2 text-[#dfe6f3]">{proj.name}</h1>
+            <h2 className="text-md font-semibold text-[#a2c0da]">{proj.date}</h2>
           </div>
           {/* hover show desc */}
-          <div className="inset-0 absolute bg-gray-900 bg-opacity-100 text-white opacity-0 group-hover:opacity-100 transition-opacity duration-300 p-4 text-xs">
+          <div className="inset-0 absolute bg-gray-900 bg-opacity-100 text-[#dfe6f3] opacity-0 group-hover:opacity-100 transition-opacity duration-300 p-4 text-xs">
             <div className="p-2 h-full text-left">
               {proj.description}
               {proj.stack && Array.isArray(proj.stack) && (

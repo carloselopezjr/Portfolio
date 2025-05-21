@@ -1,14 +1,19 @@
 import type { Metadata } from "next";
-import { Noto_Sans } from "next/font/google";
 import "./globals.css";
 import Navbar from "./components/navbar/page";
+import { Cinzel, EB_Garamond } from "next/font/google";
 
-
-
-const Noto_SansSans = Noto_Sans({
-  variable: "--font-Noto_Sans-sans",
+const cinzel = Cinzel({
   subsets: ["latin"],
-});
+  weight: ["400", "700"],
+  variable: "--font-cinzel",
+})
+
+const garamond = EB_Garamond({
+  subsets: ["latin"],
+  weight: ["400", "700"],
+  variable: "--font-garamond",
+})
 
 export const metadata: Metadata = {
   title: "Carlos Lopez",
@@ -22,9 +27,9 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
+    <html lang="en" className={`${cinzel.variable} ${garamond.variable}`}>
       <body
-        className={`${Noto_SansSans.className} text-creamy antialiased`}
+        className={` text-[#dfe6f3] antialiased`}
       >
         <Navbar/>
         {children}
