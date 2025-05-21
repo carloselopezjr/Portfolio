@@ -14,7 +14,7 @@ export default function Main() {
       </div>
       <div className="flex justify-center p-2">
       <Image
-        className="border border-purple-900 rounded-xl"
+        className="border border-black rounded-xl"
         src="/images/vergil.gif"
         alt="vergil from devil may cry"
         width={625}

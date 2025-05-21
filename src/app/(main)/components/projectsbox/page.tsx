@@ -33,7 +33,7 @@ const Projects = [
   {
     name: "Kmodo",
     image: "/images/kmodo.webp",
-    date: "Jan 2025 - Apr 2025",
+    date: "Jan 2025 - Present",
     stack: [
       {
         name: "React",
@@ -73,7 +73,7 @@ const Projects = [
   },
   {
     name: "My Portfolio",
-    image: "/images/vergil.gif",
+    image: "/images/vez.gif",
     date: "Jan 2025 - Present",
     stack: [
       {
@@ -93,7 +93,7 @@ const Projects = [
         img: "/images/react.svg",
       },
     ],
-    description: "port port port port",
+    description: "My portfolio!!! This is first personal website and I've been enjoying the journey. Doing this project has had me reflecting and thinking of how much I've learned being in the CS Space. This is definitely a version 1, soon it will be time for a makeover.....",
   },
   {
     name: "Spark-A-Hack",
@@ -142,7 +142,13 @@ export default function ProjectBox() {
           {/* actual box 
               at some point add hover:blur or smth */}
           <div className="pb-12 flex flex-col items-center justify-center h-full w-full hover:blur-sm">
-            <Image src={proj.image} alt={proj.name} width={150} height={150} />
+            <Image 
+            className="rounded-xl" 
+            src={proj.image} 
+            alt={proj.name} 
+            width={150} 
+            height={150} 
+            />
             <h1 className=" text-xl font-bold mt-2">{proj.name}</h1>
             <h2 className="text-md font-semibold text-gray-600">{proj.date}</h2>
           </div>
