@@ -2,19 +2,19 @@ import Image from "next/image";
 
 const Languages = [
   { name: "Python", icon: "images/python.svg" },
-  { name: "C#", icon: "images/fd.svg" },
-  { name: "C", icon: "images/c.svg" },
+  { name: "C#", icon: "images/csharp.svg" },
+  { name: "C", icon: "images/c.svg" }, // resize later
   { name: "HTML", icon: "images/html.svg" },
   { name: "CSS", icon: "images/css.svg" },
   { name: "JavaScript", icon: "images/javascript.svg" },
   { name: "TypeScript", icon: "images/typescript.svg" },
-  { name: "Lua", icon: "images/lua.svg" }
+  { name: "Lua", icon: "images/lua.svg" },
 ];
 
 const FrameworksPackages = [
   { name: "React", icon: "images/react.svg" },
   { name: "Next.js", icon: "images/nextjs.svg" },
-  { name: "Tailwind CSS", icon: "images/tailwind.svg" },
+  { name: "Tailwind CSS", icon: "images/tailwind.svg" }, // resize later
   { name: ".Net", icon: "images/NET.svg" },
   { name: "Node.js", icon: "images/node.svg" },
 ];
@@ -31,7 +31,6 @@ const Tools = [
 export default function SkillBox() {
   return (
     <div className="flex flex-col w-full mt-4 p-4 gap-4">
-
       <div className="flex flex-row gap-4 w-full">
         {/* Languages */}
         <div className="flex-1 text-center rounded-xl border-4 border-purple-900 bg-purp p-4 w-1/2">
