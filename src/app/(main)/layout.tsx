@@ -17,7 +17,7 @@ const garamond = EB_Garamond({
 
 export const metadata: Metadata = {
   title: "Carlos Lopez",
-  description: "Carlos Lopez is a first year at the University of Central Florida",
+  description: "first year at the University of Central Florida",
 
 };
 
