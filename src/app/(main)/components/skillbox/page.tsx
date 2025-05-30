@@ -33,7 +33,7 @@ export default function SkillBox() {
     <div className="scale-90 flex flex-col w-full p-4">
       <div className="flex flex-row gap-4 w-full">
         {/* Languages */}
-        <div className="flex-1 text-center rounded-xl border-4 border-royalblue bg-ablue p-4 w-1/2">
+        <div className="flex-1 text-center rounded-xl border-4 border-royalblue bg-ablue p-4 w-1/2 shadow-lg">
           <h1 className="font-bold text-4xl mb-4">Languages</h1>
           <div className="grid grid-cols-5 gap-2 place-items-center">
             {Languages.map((lang) => (
@@ -47,7 +47,8 @@ export default function SkillBox() {
           </div>
         </div>
 
-        <div className="flex-1 text-center rounded-xl border-4 border-royalblue bg-ablue p-4 w-1/2">
+        {/* Frameworks/Packages */}
+        <div className="flex-1 text-center rounded-xl border-4 border-royalblue bg-ablue p-4 w-1/2 shadow-lg">
           <h1 className="font-bold text-4xl mb-4">Frameworks/Packages</h1>
           <div className="grid grid-cols-5 gap-2 place-items-center">
             {FrameworksPackages.map((fpack) => (
@@ -67,7 +68,8 @@ export default function SkillBox() {
         </div>
       </div>
 
-      <div className=" text-center rounded-xl border-4 border-royalblue bg-ablue p-4 w-[49.5%]">
+      {/* Tools */}
+      <div className=" text-center rounded-xl mt-2 border-4 border-royalblue bg-ablue p-4 w-[49.5%] shadow-lg">
         <h1 className="font-bold text-4xl mb-4">Tools</h1>
         <div className="grid grid-cols-5 gap-2 place-items-center">
           {Tools.map((tool) => (
