@@ -26,6 +26,7 @@ const Tools = [
   { name: "Figma", icon: "images/figma.svg" },
   { name: "Vercel", icon: "images/vercel.svg" },
   { name: "Blender", icon: "images/blender.svg" },
+  { name: "Linux", icon: "images/Linux.svg"}
 ];
 
 export default function SkillBox() {
@@ -41,7 +42,7 @@ export default function SkillBox() {
                 key={lang.name}
                 className="p-4 rounded-xl bg-gray-950 border-royalblue border-2 hover:bg-gray-900 transition duration-300 ease-in-out hover:scale-110"
               >
-                <Image src={lang.icon} alt={lang.name} width={75} height={75} />
+                <Image src={lang.icon} alt={lang.name} title={lang.name} width={75} height={75} />
               </div>
             ))}
           </div>
@@ -59,6 +60,7 @@ export default function SkillBox() {
                 <Image
                   src={fpack.icon}
                   alt={fpack.name}
+                  title={fpack.name}
                   width={75}
                   height={75}
                 />
@@ -77,7 +79,12 @@ export default function SkillBox() {
               key={tool.name}
               className="p-4 rounded-xl bg-gray-950 border-royalblue border-2 hover:bg-gray-900 transition duration-300 ease-in-out hover:scale-110"
             >
-              <Image src={tool.icon} alt={tool.name} width={75} height={75} />
+              <Image 
+              src={tool.icon} 
+              alt={tool.name} 
+              title={tool.name}
+              width={75} 
+              height={75} />
             </div>
           ))}
         </div>
