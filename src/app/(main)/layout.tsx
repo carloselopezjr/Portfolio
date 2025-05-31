@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import "./globals.css";
-import Navbar from "./components/navbar/page";
+import Navbar from "./components/navbar/nbar";
 import { Cinzel, EB_Garamond } from "next/font/google";
 
 const cinzel = Cinzel({
