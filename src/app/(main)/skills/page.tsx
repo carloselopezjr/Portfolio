@@ -1,6 +1,6 @@
 "use client";
 
-import Skillbox from "../components/skillbox/page";
+import Skillbox from "../components/skillbox/sbox";
 import { Typewriter } from "react-simple-typewriter";
 
 

@@ -1,7 +1,7 @@
 "use client";
 
 import { Typewriter } from "react-simple-typewriter";
-import ExperienceBox from "../components/experiencebox/page";
+import ExperienceBox from "../components/experiencebox/ebox";
 
 export default function Experience() {
   return (
