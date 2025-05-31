@@ -6,7 +6,7 @@ import { Typewriter } from "react-simple-typewriter";
 
 export default function Main() {
   return (
-    <>
+    <div>
       <div className="font-garamond flex justify-center pt-4 ">
         <h1 className="border-[#3d5caa] border-2 bg-[#2e1f47] animation font-semibold p-5 rounded-xl text-5xl hover:bg-gray-900 text-[#dfe6f3] animation duration-300 ease-in-out hover:scale-105">
           <Typewriter words={["Yo, I'm Carlos."]} cursor loop={1} typeSpeed={80} />
@@ -28,6 +28,6 @@ export default function Main() {
         </h2> 
       </div>
       
-    </>
+    </div>
   );
 }

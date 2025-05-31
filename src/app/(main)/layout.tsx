@@ -31,7 +31,8 @@ export default function RootLayout({
       <body
         className={` text-[#dfe6f3] antialiased`}
       >
-        <Navbar/>
+          <Navbar/>
+        
         {children}
       </body>
     </html>

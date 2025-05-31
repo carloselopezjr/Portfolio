@@ -1,4 +1,5 @@
 import Image from "next/image";
+import { motion } from "motion/react";
 
 const experience = [
   {
@@ -35,11 +36,14 @@ const experience = [
 export default function ExperienceBox() {
   return (
     <div className="scale-110 w-[1000px] mx-auto">
-        {/* *sigh* the fact that this is so much more efficient than the other components */}
+        {/* *sigh* the fact that this is so much more efficient than skills */}
         {experience.map((exp, index) => (
-            <div
+            <motion.div
                 key={index}
-                className="bg-ablue border-royalblue rounded-xl border-2 p-4 m-4 shadow-lg"
+                className="bg-ablue border-royalblue rounded-xl border-2 p-4 m-4 shadow-lg hover:transition-all duration-300 ease-in-out hover:border-frost"
+                initial={{ scale: 1, opacity: 0}}
+                animate={{ scale: 1, opacity: 1 }}
+                transition={{ delay: index * 0.2, duration: 1, ease: "easeInOut" }}
             >
                 <div className="flex">
                     <Image
@@ -54,7 +58,7 @@ export default function ExperienceBox() {
                 </div>
                 <h2 className="text-lg text-[#8eb6d8]"> {exp.company} | {exp.date} </h2>
                 <h3 className="mt-2 text-[#a2c0da]"> {exp.description} </h3>
-            </div>
+            </motion.div>
         ))}
     </div>
   );
