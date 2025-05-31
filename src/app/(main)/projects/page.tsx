@@ -1,6 +1,6 @@
 "use client";
 
-import ProjectBox from "../components/projectsbox/page";
+import ProjectBox from "../components/projectsbox/pbox";
 import { Typewriter } from "react-simple-typewriter";
 
 
