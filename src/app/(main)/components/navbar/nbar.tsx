@@ -24,6 +24,17 @@ export default function Navbar() {
     },
   ];
 
+  const borderColor = 
+    pathname === "/"
+      ? "border-[#9a4129] hover:border-[#aee7ff] hover:shadow-[0_0_12px_#aee7ff]" 
+        : pathname === "/projects"
+        ? "border-[#9a4129] hover:border-[#e3612f] hover:shadow-[0_0_12px_#e3612f]"
+        : pathname === "/experience"
+        ? "border-[#5148a4] hover:border-[#9990af] hover:shadow-[0_0_12px_#9990af]"
+        : pathname === "/skills"
+        ? "border-[#4c536c] hover:border-[#616e93] hover:shadow-[0_0_12px_#616e93]"
+        : "border-gray-300 hover:border-[#aee7ff] hover:shadow-[0_0_12px_#aee7ff]";
+
   const dIcons: { name: LucideIconName; href: string }[] = [
     {
       name: "file-text",
@@ -41,8 +52,8 @@ export default function Navbar() {
 
   
   return (
-    <div className=" rounded-full scale-90">
-      <nav className="font-cinzel mt-2 text-2xl font-semibold text-[#dfe6f3] bg-[#2e1f47] p-6 rounded-xl hover:transition duration-300 ease-in-out hover:shadow-[0_0_12px_#aee7ff]">
+    <div className=" rounded-full scale-90 p-2">
+      <nav className={`font-cinzel text-2xl font-semibold text-[#dfe6f3] backdrop-blur-xl p-6 ${borderColor} border-2 rounded-xl hover:transition duration-300 ease-in-out`}>
         <ul className="flex space-x-8">
           {/* conditional underline */}
           <li

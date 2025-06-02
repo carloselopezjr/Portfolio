@@ -35,12 +35,13 @@ const experience = [
 
 export default function ExperienceBox() {
   return (
+    <div className="pb-8">
     <div className="scale-110 w-[1000px] mx-auto">
       {/* *sigh* the fact that this is so much more efficient than skills */}
       {experience.map((exp, index) => (
         <motion.div
           key={index}
-          className="bg-ablue border-royalblue rounded-xl border-2 p-4 m-4 shadow-lg hover:transition-all duration-300 ease-in-out hover:border-frost"
+          className="backdrop-blur-md border-[#6d63a8] rounded-xl border-2 p-4 m-4 shadow-lg hover:transition-all duration-300 ease-in-out hover:border-[#9990af]"
           initial={{ scale: 1, opacity: 0 }}
           animate={{ scale: 1, opacity: 1 }}
           transition={{ delay: index * 0.2, duration: 1, ease: "easeInOut" }}
@@ -53,15 +54,16 @@ export default function ExperienceBox() {
               width={30}
               height={30}
             />
-            <h1 className="text-2xl font-bold text-[#dfe6f3]">{exp.name}</h1>
+            <h1 className="text-2xl font-bold text-black">{exp.name}</h1>
           </div>
-          <h2 className="text-lg text-[#8eb6d8]">
+          <h2 className="text-lg text-gray-900">
             {" "}
             {exp.company} | {exp.date}{" "}
           </h2>
-          <h3 className="mt-2 text-[#a2c0da]"> {exp.description} </h3>
+          <h3 className="mt-2 text-gray-800"> {exp.description} </h3>
         </motion.div>
       ))}
+    </div>
     </div>
   );
 }

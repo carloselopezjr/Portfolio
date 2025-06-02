@@ -1,7 +1,7 @@
 import Image from "next/image";
 import { motion } from "motion/react";
 
-// dont look at this
+// dont look at this page 
 
 const Languages = [
   { name: "Python", icon: "images/python.svg" },
@@ -38,7 +38,7 @@ export default function SkillBox() {
       <div className="flex flex-row gap-4 w-full">
         {/* Languages */}
         <motion.div
-          className="flex-1 text-center rounded-xl border-4 border-royalblue bg-ablue p-4 w-1/2 shadow-lg"
+          className="flex-1 text-center rounded-xl border-2 border-[#232234] backdrop-blur-md p-4 w-1/2 shadow-lg"
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ duration: 1, ease: "easeInOut" }}
@@ -53,7 +53,7 @@ export default function SkillBox() {
             {Languages.map((lang, index) => (
               <motion.div
                 key={index}
-                className="p-4 rounded-xl bg-gray-950 border-royalblue border-2 hover:bg-gray-900 transition duration-300 ease-in-out hover:scale-110 hover:border-frost"
+                className="p-4 rounded-xl bg-gray-950 bg-opacity-60 border-[#616e93] border-2 hover:bg-gray-900 transition duration-300 ease-in-out hover:scale-110 hover:border-[#7b8ba8] hover:bg-opacity-60"
                 initial={{ opacity: 0 }}
                 animate={{ opacity: 1 }}
                 transition={{
@@ -76,7 +76,7 @@ export default function SkillBox() {
 
         {/* Frameworks/Packages */}
         <motion.div
-          className="flex-1 text-center rounded-xl border-4 border-royalblue bg-ablue p-4 w-1/2 shadow-lg"
+          className="flex-1 text-center rounded-xl border-2 border-[#232234] backdrop-blur-md p-4 w-1/2 shadow-lg"
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ duration: 0.5, ease: "easeInOut" }}
@@ -86,7 +86,7 @@ export default function SkillBox() {
             {FrameworksPackages.map((fpack, index) => (
               <motion.div
                 key={index}
-                className="p-4 rounded-xl bg-gray-950 border-royalblue border-2 hover:bg-gray-900 transition duration-300 ease-in-out hover:scale-110 hover:border-frost"
+                className="p-4 rounded-xl bg-gray-950 border-[#616e93] bg-opacity-60 border-2 hover:bg-gray-900 transition duration-300 ease-in-out hover:scale-110 hover:border-[#7b8ba8] hover:bg-opacity-60"
                 initial={{ opacity: 0 }}
                 animate={{ opacity: 1 }}
                 transition={{
@@ -110,7 +110,7 @@ export default function SkillBox() {
 
       {/* Tools */}
       <motion.div
-        className=" text-center rounded-xl mt-2 border-4 border-royalblue bg-ablue p-4 w-[49.5%] shadow-lg"
+        className=" text-center rounded-xl mt-2 border-2 border-[#232234] backdrop-blur-md p-4 w-[49.5%] shadow-lg"
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
         transition={{ duration: 0.5, ease: "easeInOut" }}
@@ -120,7 +120,7 @@ export default function SkillBox() {
           {Tools.map((tool, index) => (
             <motion.div
               key={index}
-              className="p-4 rounded-xl bg-gray-950 border-royalblue border-2 hover:bg-gray-900 transition duration-300 ease-in-out hover:scale-110 hover:border-frost"
+              className="p-4 rounded-xl bg-gray-950 bg-opacity-60 border-[#616e93] border-2 hover:bg-gray-900 transition duration-300 ease-in-out hover:scale-110 hover:border-[#7b8ba8] hover:bg-opacity-60"
               initial={{ opacity: 0 }}
               animate={{ opacity: 1 }}
               transition={{
