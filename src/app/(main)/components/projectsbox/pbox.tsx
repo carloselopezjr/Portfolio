@@ -173,7 +173,7 @@ export default function ProjectBox() {
           </div>
           {/* hover show desc */}
           <div className="inset-0 absolute bg-[url(/images/TheUtterEast.webp)] bg-blur bg-opacity-100 text-black opacity-0 group-hover:opacity-100 transition-opacity duration-300 p-4 text-[13px]">
-            <div className="p-2 h-full text-left">
+            <div className="p-1 h-full font-semibold text-left">
               {proj.description}
               {proj.stack && Array.isArray(proj.stack) && (
                 <div className="mt-6 grid grid-cols-4 gap-2 place-items-center">

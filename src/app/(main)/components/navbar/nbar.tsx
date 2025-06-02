@@ -26,7 +26,7 @@ export default function Navbar() {
 
   const borderColor = 
     pathname === "/"
-      ? "border-[#9a4129] hover:border-[#aee7ff] hover:shadow-[0_0_12px_#aee7ff]" 
+      ? "border-[#5148a4] hover:border-[#9990af] hover:shadow-[0_0_12px_#9990af]" 
         : pathname === "/projects"
         ? "border-[#9a4129] hover:border-[#e3612f] hover:shadow-[0_0_12px_#e3612f]"
         : pathname === "/experience"
