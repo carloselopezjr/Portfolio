@@ -17,7 +17,7 @@ export default function TopAlbums() {
   return (
     <div>
       <h1 className="text-center text-2xl font-bold">
-        My Top Albums:
+       Top Albums This Month:
       </h1>
 
       <div className=" p-4 rounded-xl  backdrop-blur-md">
@@ -31,7 +31,7 @@ export default function TopAlbums() {
               className=""
             >
               <Image
-                className="rounded-md hover:scale-110 transition-all duration-150 ease-in-out hover:shadow-lg"
+                className="text-blacrounded-md hover:scale-110 transition-all duration-150 ease-in-out hover:shadow-lg"
                 src={album.image}
                 alt={`${album.name} by ${album.artist}`}
                 title={album.name}
@@ -40,7 +40,6 @@ export default function TopAlbums() {
                 onClick={() => window.open(album.url, "_blank")}
                 style={{ cursor: "pointer" }}
               />
-              <h1></h1>
             </motion.div>
           ))}
         </div>

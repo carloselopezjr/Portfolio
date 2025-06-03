@@ -9,7 +9,7 @@ export default function Main() {
   return (
     <div className="">
       <div className="font-garamond flex justify-center pt-4  ">
-        <h1 className="underline underline-offset-4 animation font-semibold p-5 rounded-xl text-5xl text-white animation duration-300 ease-in-out hover:scale-105">
+        <h1 className="underline underline-offset-4 animation font-semibold p-5 rounded-xl text-5xl text-white animation duration-300 ease-in-out hover:scale-105 ">
           <Typewriter
             words={["Yo, I'm Carlos."]}
             cursor

@@ -10,7 +10,7 @@ function generateApiSig(params: Record<string, string>, sharedSecret: string): s
 export async function GET() {
   const apiKey = process.env.LASTFM_API_KEY!;
   const sharedSecret = process.env.LASTFM_SHARED_SECRET!;
-  const token = 'lC3Of0lVX0JFz9AN4q_LGl7bNQEXzeRi';
+  const token = process.env.LASTFM_TOKEN!;
 
   const params = {
     method: 'auth.getSession',

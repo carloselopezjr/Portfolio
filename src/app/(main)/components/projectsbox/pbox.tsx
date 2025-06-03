@@ -25,7 +25,7 @@ const Projects = [
       },
       {
         name: "FL Studio",
-        img: "/images/fff.webp",
+        img: "/images/flstudio.webp",
       },
     ],
     description:
@@ -93,6 +93,9 @@ const Projects = [
         name: "React",
         img: "/images/react.svg",
       },
+      { name: "LastFm",
+        img: "/images/lastfm.svg"
+      }
     ],
     description:
       "My portfolio!!! This is first personal website and I've been enjoying the journey. Doing this project has had me reflecting and thinking of how much I've learned being in the CS Space. This is definitely a version 1, soon it will be time for a makeover.....",

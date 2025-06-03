@@ -18,6 +18,9 @@ const garamond = EB_Garamond({
 export const metadata: Metadata = {
   title: "Carlos Lopez",
   description: "first year at the University of Central Florida",
+  icons: {
+    icon: "/"
+  },
 };
 
 export default function RootLayout({

@@ -26,7 +26,7 @@ const experience = [
   },
   {
     name: "Undergraduate Student",
-    img: "/images/ucaf.webp",
+    img: "/images/ucf.webp",
     company: "University of Central Florida",
     date: "August 2024 - Present",
     description: "Currently enrolled as a Computer Science student at UCF.",

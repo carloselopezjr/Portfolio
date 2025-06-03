@@ -30,11 +30,9 @@ export default function Listening() {
           alt={`${track.name} by ${track.artist}`}
           width={200}
           height={250}
-          
         />
         <Link href={track.url} className="mt-4 text-xl font-bold hover:underline"> {track.name} </Link>
         <h2 className="text-lg font-semibold"> {track.artist} </h2>
-        
       </div>
     </motion.div>
   );
