@@ -20,7 +20,7 @@ export default function TopAlbums() {
        Top Albums This Month:
       </h1>
 
-      <div className=" p-4 rounded-xl  backdrop-blur-md">
+      <div className=" p-4 rounded-xl  backdrop-blur-md bg-transparent">
         <div className="grid grid-cols-3 gap-1 rounded-lg ">
           {albums.map((album, index) => (
             <motion.div

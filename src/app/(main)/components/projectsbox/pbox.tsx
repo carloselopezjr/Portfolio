@@ -160,7 +160,7 @@ export default function ProjectBox() {
           initial={{ scale: 1, opacity: 0 }}
           animate={{ scale: 1, opacity: 1 }}
           transition={{ delay: index * 0.2, duration: 1, ease: "easeInOut" }}
-          className="w-[350px] h-[350px] m-2 lg:scale-110 lg:relative group lg:w-[250px] lg:h-[300px] border-2 border-[#9a4129] rounded-xl flex overflow-hidden backdrop-blur-md shadow-xl hover:transition duration-300 ease-in-out hover:scale-125 hover:shadow-[0_0_12px_#e3612f] hover:border-[#e3612f]"
+          className="w-[350px] h-[350px] m-2 lg:scale-110 lg:relative group lg:w-[250px] lg:h-[300px] border-2 border-[#9a4129] rounded-xl flex overflow-hidden backdrop-blur-md shadow-xl hover:transition-all hover:duration-300 hover:ease-in-out hover:scale-125 hover:shadow-[0_0_12px_#e3612f] hover:border-[#e3612f]"
         >
           {/* actual box  */}
           <div className="lg:pb-12 flex flex-col items-center justify-center h-full w-full hover:blur-sm">

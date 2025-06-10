@@ -55,7 +55,7 @@ export default function SkillBox() {
             {Languages.map((lang, index) => (
               <motion.div
                 key={index}
-                className="p-4 rounded-xl bg-gray-950 bg-opacity-60 border-[#616e93] border-2 hover:bg-gray-900 transition duration-300 ease-in-out hover:scale-110 hover:border-[#7b8ba8] hover:bg-opacity-60"
+                className="p-4 rounded-xl bg-gray-950 bg-opacity-60 border-[#616e93] border-2 hover:bg-gray-900 hover:transition-all hover:duration-300 hover:ease-in-out hover:scale-110 hover:border-[#7b8ba8] hover:bg-opacity-60"
                 initial={{ opacity: 0 }}
                 animate={{ opacity: 1 }}
                 transition={{
@@ -91,7 +91,7 @@ export default function SkillBox() {
             {FrameworksPackages.map((fpack, index) => (
               <motion.div
                 key={index}
-                className="p-4 rounded-xl bg-gray-950 border-[#616e93] bg-opacity-60 border-2 hover:bg-gray-900 transition duration-300 ease-in-out hover:scale-110 hover:border-[#7b8ba8] hover:bg-opacity-60"
+                className="p-4 rounded-xl bg-gray-950 border-[#616e93] bg-opacity-60 border-2 hover:bg-gray-900 hover:transition-all hover:duration-300 hover:ease-in-out hover:scale-110 hover:border-[#7b8ba8] hover:bg-opacity-60"
                 initial={{ opacity: 0 }}
                 animate={{ opacity: 1 }}
                 transition={{
@@ -127,7 +127,7 @@ export default function SkillBox() {
           {Tools.map((tool, index) => (
             <motion.div
               key={index}
-              className="p-4 rounded-xl bg-gray-950 bg-opacity-60 border-[#616e93] border-2 hover:bg-gray-900 transition duration-300 ease-in-out hover:scale-110 hover:border-[#7b8ba8] hover:bg-opacity-60"
+              className="p-4 rounded-xl bg-gray-950 bg-opacity-60 border-[#616e93] border-2 hover:bg-gray-900 hover:transition-all hover:duration-300 hover:ease-in-out hover:scale-110 hover:border-[#7b8ba8] hover:bg-opacity-60"
               initial={{ opacity: 0 }}
               animate={{ opacity: 1 }}
               transition={{

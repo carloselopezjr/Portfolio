@@ -40,7 +40,7 @@ export default function ExperienceBox() {
       {experience.map((exp, index) => (
         <motion.div
           key={index}
-          className="backdrop-blur-md border-[#6d63a8] rounded-xl border-2 p-4 m-4 shadow-lg hover:transition-all duration-300 ease-in-out hover:border-[#9990af]"
+          className="backdrop-blur-md border-[#6d63a8] rounded-xl border-2 p-4 m-4 shadow-lg hover:transition-all hover:duration-300 hover:ease-in-out hover:border-[#9990af]"
           initial={{ scale: 1, opacity: 0 }}
           animate={{ scale: 1, opacity: 1 }}
           transition={{ delay: index * 0.2, duration: 1, ease: "easeInOut" }}
