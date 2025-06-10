@@ -35,9 +35,8 @@ const experience = [
 
 export default function ExperienceBox() {
   return (
-    <div className="pb-8">
-    <div className="scale-110 w-[1000px] mx-auto">
-      {/* *sigh* the fact that this is so much more efficient than skills */}
+    <div className="flex pb-8">
+    <div className=" lgscale-110 w-[1000px] mx-auto">
       {experience.map((exp, index) => (
         <motion.div
           key={index}
@@ -51,16 +50,16 @@ export default function ExperienceBox() {
               className="rounded-lg mr-2"
               src={exp.img}
               alt={exp.company}
-              width={30}
-              height={30}
+              width={50}
+              height={50}
             />
             <h1 className="text-2xl font-bold text-black">{exp.name}</h1>
           </div>
-          <h2 className="text-lg text-gray-900">
+          <h2 className="text-xl lg:text-lg text-gray-900">
             {" "}
             {exp.company} | {exp.date}{" "}
           </h2>
-          <h3 className="mt-2 text-gray-800"> {exp.description} </h3>
+          <h3 className="mt-2 text-gray-800 text-lg lg:text-base"> {exp.description} </h3>
         </motion.div>
       ))}
     </div>

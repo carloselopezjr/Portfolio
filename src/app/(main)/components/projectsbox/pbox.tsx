@@ -70,7 +70,7 @@ const Projects = [
       },
     ],
     description:
-      "Kmodo is a centralized hackathon dashboard designed to unify and streamline the hackathon experience. It brings event creation, organization, and participation into one cohesive platform, making hackathons more accessible and enjoyable.",
+      "Kmodo is a centralized hackathon dashboard designed streamline the hackathon experience. It brings event creation, organization, and participation into one cohesive platform, making hackathons more accessible and enjoyable.",
   },
   {
     name: "My Portfolio",
@@ -153,17 +153,17 @@ const Projects = [
 
 export default function ProjectBox() {
   return (
-    <div className="mt-10 flex flex-row justify-center w-full flex-wrap">
+    <div className="flex lg:mt-10 lg:flex lg:flex-row justify-center w-full flex-wrap">
       {Projects.map((proj, index) => (
         <motion.div
           key={proj.name}
           initial={{ scale: 1, opacity: 0 }}
           animate={{ scale: 1, opacity: 1 }}
           transition={{ delay: index * 0.2, duration: 1, ease: "easeInOut" }}
-          className="scale-110 m-2 relative group w-[250px] h-[300px] border-2 border-[#9a4129] rounded-xl flex overflow-hidden backdrop-blur-md shadow-xl hover:transition duration-300 ease-in-out hover:scale-125 hover:shadow-[0_0_12px_#e3612f] hover:border-[#e3612f]"
+          className="w-[350px] h-[350px] m-2 lg:scale-110 lg:relative group lg:w-[250px] lg:h-[300px] border-2 border-[#9a4129] rounded-xl flex overflow-hidden backdrop-blur-md shadow-xl hover:transition duration-300 ease-in-out hover:scale-125 hover:shadow-[0_0_12px_#e3612f] hover:border-[#e3612f]"
         >
           {/* actual box  */}
-          <div className="pb-12 flex flex-col items-center justify-center h-full w-full hover:blur-sm">
+          <div className="lg:pb-12 flex flex-col items-center justify-center h-full w-full hover:blur-sm">
             <Image
               className="rounded-xl"
               src={proj.image}
@@ -171,12 +171,12 @@ export default function ProjectBox() {
               width={150}
               height={150}
             />
-            <h1 className=" text-xl font-bold mt-2 text-black">{proj.name}</h1>
-            <h2 className="text-md font-semibold text-gray-800">{proj.date}</h2>
+            <h1 className="text-3xl lg:text-xl font-bold mt-2 text-black">{proj.name}</h1>
+            <h2 className="text-xl lg:text-md font-semibold text-gray-800">{proj.date}</h2>
           </div>
           {/* hover show desc */}
           <div className="inset-0 absolute bg-[url(/images/TheUtterEast.webp)] bg-blur bg-opacity-100 text-black opacity-0 group-hover:opacity-100 transition-opacity duration-300 p-4 text-[13px]">
-            <div className="p-1 h-full font-semibold text-left">
+            <div className="p-1 h-full font-semibold text-left text-xl lg:text-sm">
               {proj.description}
               {proj.stack && Array.isArray(proj.stack) && (
                 <div className="mt-6 grid grid-cols-4 gap-2 place-items-center">

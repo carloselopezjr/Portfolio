@@ -1,7 +1,7 @@
 import Image from "next/image";
 import { motion } from "motion/react";
 
-// dont look at this page 
+// too lazy to fix this at the moment "If it ain't broke don't fix it"
 
 const Languages = [
   { name: "Python", icon: "images/python.svg" },
@@ -34,18 +34,20 @@ const Tools = [
 
 export default function SkillBox() {
   return (
-    <div className="scale-90 flex flex-col w-full">
-      <div className="flex flex-row gap-4 w-full">
+    <div className="lg:scale-90 flex flex-col w-full">
+      <div className="flex flex-col lg:flex-row gap-4 w-full">
         {/* Languages */}
         <motion.div
-          className="flex-1 text-center rounded-xl border-2 border-[#232234] backdrop-blur-md p-4 w-1/2 shadow-lg"
+          // box
+          className="flex-1 text-center rounded-xl border-2 border-[#232234] backdrop-blur-md p-4 m-4 lg:m-0 shadow-lg justify-center"
+          // lg:mt-10 lg:flex lg:flex-row 
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ duration: 1, ease: "easeInOut" }}
         >
           <h1 className="font-bold text-4xl mb-4">Languages</h1>
           <motion.div
-            className="grid grid-cols-5 gap-2 place-items-center"
+            className="grid grid-cols-3 gap-1 lg:grid-cols-5 lg:gap-2 place-items-center"
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             transition={{ duration: 0.5, ease: "easeInOut" }}
@@ -77,13 +79,15 @@ export default function SkillBox() {
 
         {/* Frameworks/Packages */}
         <motion.div
-          className="flex-1 text-center rounded-xl border-2 border-[#232234] backdrop-blur-md p-4 w-1/2 shadow-lg"
+          // box
+          className="flex-1 text-center rounded-xl border-2 border-[#232234] backdrop-blur-md p-4 m-4 lg:m-0 shadow-lg justify-center"
+          
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ duration: 0.5, ease: "easeInOut" }}
         >
           <h1 className="font-bold text-4xl mb-4">Frameworks/Packages</h1>
-          <div className="grid grid-cols-5 gap-2 place-items-center">
+          <div className="grid grid-cols-3 gap-1 lg:grid-cols-5 lg:gap-2 place-items-center">
             {FrameworksPackages.map((fpack, index) => (
               <motion.div
                 key={index}
@@ -112,13 +116,14 @@ export default function SkillBox() {
 
       {/* Tools */}
       <motion.div
-        className=" text-center rounded-xl mt-2 border-2 border-[#232234] backdrop-blur-md p-4 w-[49.5%] shadow-lg"
+        // box
+        className=" flex-1 text-center rounded-xl border-2 border-[#232234] backdrop-blur-md p-4 m-4 lg:m-0 lg:mt-4 shadow-lg justify-center lg:w-[49.5%]"
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
         transition={{ duration: 0.5, ease: "easeInOut" }}
       >
         <h1 className="font-bold text-4xl mb-4">Developer Tools</h1>
-        <div className="grid grid-cols-5 gap-2 place-items-center">
+        <div className="grid grid-cols-3 gap-1 lg:grid-cols-5 lg:gap-2 place-items-center">
           {Tools.map((tool, index) => (
             <motion.div
               key={index}

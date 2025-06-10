@@ -20,7 +20,7 @@ export default function Main() {
         </h1>
       </div>
 
-      <div className="scale-90 bg-white/5 backdrop-blur-sm border border-white/10 rounded-2xl p-6 shadow-lg w-fit mx-auto flex">
+      <div className=" bg-white/5 backdrop-blur-sm border border-white/10 rounded-2xl p-6 shadow-lg w-fit mx-auto lg:flex">
         <div className="">
           <Listening />
         </div>
