@@ -15,13 +15,36 @@ const garamond = EB_Garamond({
   variable: "--font-garamond",
 });
 
-export const metadata: Metadata = {
-  title: "Carlos Lopez",
-  description: "first year at the University of Central Florida",
-  icons: {
-    icon: "/"
+export const metadata: Metadata = 
+{
+  title: "Carlos Emilio Lopez",
+  description: "Carlos E. Lopez is an undergraduate Computer Science student at the University of Central Florida.",
+  keywords: [
+    "Carlos Lopez",
+    "Carlos E. Lopez",
+    "Carlos Emilio Lopez",
+    "Carlos Lopez UCF",
+    "Carlos Lopez Computer Science",
+    "UCF",
+    "UCF CECS",
+    "University of Central Florida",
+    "Full Stack Developer",
+    "Web Developer",
+    "Software Engineer",
+    "React",
+    "Next.js",
+    "TypeScript",
+    "Open Source",
+  ],
+  openGraph: {
+    type: "website",
+    title: "Carlos Emilio Lopez",
+    description: "Carlos E. Lopez is an undergraduate Computer Science student at the University of Central Florida with a passion for web and game development.",
+    url: "https://carloselopez.dev",
+    images: [{url: "https://carloselopez.dev/images/favicon.jpg"}]
   },
-};
+}
+
 
 export default function RootLayout({
   children,
@@ -30,7 +53,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" className={`${cinzel.variable} ${garamond.variable} bg-transparent h-full`}>
-      <body className="bg-transparent antialiased h-full">
+      <body className="bg-black antialiased h-full animate-fadeIn">
         <Background>
           <Navbar />
           {children}
