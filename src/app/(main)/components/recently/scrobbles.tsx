@@ -15,21 +15,7 @@ export default function Listening() {
       .then((data) => setTrack(data.track));
   }, []);
 
-  if (!track)
-    return (
-      <div>
-        <h1 className="text-2xl lg:text-2xl font-bold text-center">
-          Currently Listening To:
-        </h1>
-        <div className="w-full flex flex-col items-center">
-          <div className="bg-transparent z-0 p-14 rounded-xl backdrop-blur-md transition-all duration-300 ease-in-out">
-            <div className=" rounded-xl mb-2 w-[200px] h-[250px]" />
-            <h1 className="mt-4 text-xl font-bold hover:underline"></h1>
-            <h2 className="text-lg font-semibold opacity-90" />
-          </div>
-        </div>
-      </div>
-    );
+  if (!track) return null;
 
   return (
     <div className="">
@@ -40,7 +26,7 @@ export default function Listening() {
         <div className="bg-transparent p-14 rounded-xl backdrop-blur-md transition-all duration-300 ease-in-out">
           <motion.div
             className=""
-            initial={{ opacity: 0, scale: 1 }}
+            initial={{ opacity: 0 }}
             animate={{ opacity: 1, scale: 1 }}
             transition={{ duration: 0.75, ease: "easeInOut" }}
           >

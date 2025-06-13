@@ -14,28 +14,8 @@ export default function TopAlbums() {
       .then((data) => setAlbums(data.albums));
   }, []);
 
-  if (albums.length === 0) return (
-    <div>
-      <h1 className="text-center text-2xl font-bold">
-       Top Albums This Month:
-      </h1>
+  if (albums.length === 0) return null;
 
-      <div className=" p-4 rounded-xl  backdrop-blur-md bg-transparent w-[400] h-[375px]">
-        <div className="grid grid-cols-3 gap-1 rounded-lg ">
-          
-            <div
-                
-              className=""
-            >
-              <h1
-                className="w-[110px] h-[50px]"
-              />
-            </div
-          >
-        </div>
-      </div>
-    </div>
-  );
 
   return (
     <div>
@@ -47,7 +27,7 @@ export default function TopAlbums() {
         <div className="grid grid-cols-3 gap-1 rounded-lg ">
           {albums.map((album, index) => (
             <motion.div
-                initial={{ opacity: 0, scale: 1 }}
+                initial={{ opacity: 0 }}
                 animate={{ opacity: 1, scale: 1 }}
                 transition={{ delay: index * 0.1, duration: 0.5, ease: "easeInOut" }}
               key={index}
