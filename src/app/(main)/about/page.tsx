@@ -3,13 +3,19 @@
 import Image from "next/image";
 import React from "react";
 import { motion } from "motion/react";
+import { Typewriter } from "react-simple-typewriter";
 
 export default function About() {
   return (
     <div className="max-w-6xl mx-auto p-4">
       <div className="text-white text-center mb-8 p-4">
-        <h1 className="font-cinzel text-4xl font-bold underline underline-offset-4 decoration-white drop-shadow-[0_1px_4px_rgba(0,0,0,0.45)]">
-          About Me
+        <h1 className="m-4 font-cinzel text-4xl font-bold underline underline-offset-4 decoration-white drop-shadow-[0_1px_4px_rgba(0,0,0,0.45)]">
+          <Typewriter
+            words={["About Me"]}
+            loop={1}
+            typeSpeed={80}
+          >
+          </Typewriter>
         </h1>
       </div>
     <motion.div

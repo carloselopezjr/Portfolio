@@ -15,7 +15,7 @@ const experience = [
     img: "/images/knighthacks.jpg",
     company: "Knight Hacks Project Launch",
     date: "January 2025 - April 2025",
-    description: "During spring semester I participated in Knight Hack's Project Launch, a program designed to help students develop their own projects. Here, my team won for our project Kmodo, a platform that aims to streamline hackahton organization and participation.",
+    description: "During spring semester I participated in Knight Hack's Project Launch, a program designed to help students develop their own projects. Here, my team won for our project Kmodo, a platform that aims to streamline hackathon organization and participation.",
   },
   {
     name: "Best App Dev Award Winner",

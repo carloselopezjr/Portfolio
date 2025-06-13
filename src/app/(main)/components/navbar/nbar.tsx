@@ -47,7 +47,7 @@ export default function Navbar() {
   const dIcons: { name: LucideIconName; href: string }[] = [
     {
       name: "file-text",
-      href: "/CS_Resume.pdf",
+      href: "/Resume.pdf",
     },
     {
       name: "github",
