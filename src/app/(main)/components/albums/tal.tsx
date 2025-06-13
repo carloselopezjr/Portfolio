@@ -14,13 +14,36 @@ export default function TopAlbums() {
       .then((data) => setAlbums(data.albums));
   }, []);
 
+  if (albums.length === 0) return (
+    <div>
+      <h1 className="text-center text-2xl font-bold">
+       Top Albums This Month:
+      </h1>
+
+      <div className=" p-4 rounded-xl  backdrop-blur-md bg-transparent w-[400] h-[375px]">
+        <div className="grid grid-cols-3 gap-1 rounded-lg ">
+          
+            <div
+                
+              className=""
+            >
+              <h1
+                className="w-[110px] h-[50px]"
+              />
+            </div
+          >
+        </div>
+      </div>
+    </div>
+  );
+
   return (
     <div>
       <h1 className="text-center text-2xl font-bold">
        Top Albums This Month:
       </h1>
 
-      <div className=" p-4 rounded-xl  backdrop-blur-md bg-transparent">
+      <div className=" p-[19px] rounded-xl  backdrop-blur-md bg-transparent">
         <div className="grid grid-cols-3 gap-1 rounded-lg ">
           {albums.map((album, index) => (
             <motion.div
@@ -31,7 +54,7 @@ export default function TopAlbums() {
               className=""
             >
               <Image
-                className="text-blacrounded-md hover:scale-110 transition-all duration-150 ease-in-out hover:shadow-lg"
+                className=" hover:scale-110 transition-all duration-150 ease-in-out hover:shadow-lg"
                 src={album.image}
                 alt={`${album.name} by ${album.artist}`}
                 title={album.name}

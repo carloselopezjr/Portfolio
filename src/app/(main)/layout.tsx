@@ -25,6 +25,8 @@ export const metadata: Metadata =
     "Carlos Emilio Lopez",
     "Carlos Lopez UCF",
     "Carlos Lopez Computer Science",
+    "Carlos e Lopez developer UCF",
+    "Carlos e lopez",
     "UCF",
     "UCF CECS",
     "University of Central Florida",
@@ -52,8 +54,8 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" className={`${cinzel.variable} ${garamond.variable} bg-transparent h-full`}>
-      <body className="bg-black antialiased h-full animate-fadeIn">
+    <html lang="en" className={`${cinzel.variable} ${garamond.variable} h-full`}>
+      <body className=" antialiased h-full">
         <Background>
           <Navbar />
           {children}
