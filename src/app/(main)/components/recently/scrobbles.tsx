@@ -39,12 +39,12 @@ export default function Listening() {
             />
             <Link
               href={track.url}
-              className="mt-4 text-xl font-bold hover:underline"
+              className="mt-4 text-lg font-bold hover:underline"
             >
               {" "}
               {track.name}{" "}
             </Link>
-            <h2 className="text-lg font-semibold opacity-90">
+            <h2 className="text-md font-semibold opacity-90">
               {" "}
               {track.artist}{" "}
             </h2>

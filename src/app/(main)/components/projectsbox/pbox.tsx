@@ -94,11 +94,11 @@ const Projects = [
         img: "/images/react.svg",
       },
       { name: "LastFm",
-        img: "/images/lastfm.svg"
+        img: "/images/lastFm.svg"
       }
     ],
     description:
-      "My portfolio!!! This is first personal website and I've been enjoying the journey. Doing this project has had me reflecting and thinking of how much I've learned being in the CS Space. This is definitely a version 1, soon it will be time for a makeover.....",
+      "This is my personal portfolio, showcasing everything I've done so far in my journey. I have learned so much while building this, and it has become my pride and joy. I hope you enjoy it as much as I do. ",
   },
   {
     name: "Spark-A-Hack",
@@ -143,11 +143,16 @@ const Projects = [
         img: "/images/lua.svg",
       },
       {
+        name: "Roblox Studio",
+        img: "/images/robloxstudio.svg",
+      },
+      {
         name: "Blender",
         img: "/images/blender.svg",
       },
+      
     ],
-    description: "Lorem ipsum blah blah blah poop poop poop",
+    description: "Project Diablo is a Roblox game that I am currently developing with a team of friends. It plans to be an hack and slash PVP game with gameplay inspired by GunZ movement and Devil May Cry combat mechanics.",
   },
 ];
 

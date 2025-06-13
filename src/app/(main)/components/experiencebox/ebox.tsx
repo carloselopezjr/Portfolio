@@ -11,25 +11,25 @@ const experience = [
       "Working in the ADC Research Lab at UCF, my research focuses on developing an addon to Microsoft Flight Simulator that integrates real-world flight data to simulate past flight paths within the simulator environment. The goal is to enable accurate visual reconstruction of real flight events, providing a powerful tool for analysis and research into flight behavior. ",
   },
   {
-    name: "Project Launcher",
+    name: "Project Launch First Place Winner",
     img: "/images/knighthacks.jpg",
     company: "Knight Hacks Project Launch",
     date: "January 2025 - April 2025",
-    description: "I won lol",
+    description: "During spring semester I participated in Knight Hack's Project Launch, a program designed to help students develop their own projects. Here, my team won for our project Kmodo, a platform that aims to streamline hackahton organization and participation.",
   },
   {
-    name: "Best App Dev",
+    name: "Best App Dev Award Winner",
     img: "/images/bitcamp.png",
     company: "Bitcamp",
     date: "April 2025",
-    description: "This April, I traveled to Maryland to participate in Bitcamp",
+    description: "This April, I traveled to Maryland to participate in Bitcamp, a hackathon at the University of Maryland. I was awarded Best App Dev for my team project Riffs, a creative music app that allows users to hum a melody, convert it into guitar tabs, edit it, and jam out in a Guitar Hero-style game-play experience.",
   },
   {
     name: "Undergraduate Student",
     img: "/images/ucf.webp",
     company: "University of Central Florida",
     date: "August 2024 - Present",
-    description: "Currently enrolled as a Computer Science student at UCF.",
+    description: "Currently in my first year of undergraduate studies at the University of Central Florida.",
   },
 ];
 

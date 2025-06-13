@@ -55,7 +55,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" className={`${cinzel.variable} ${garamond.variable} h-full min-h-screen`}>
-      <body className=" antialiased h-full  overflow-x-hidden">
+      <body className=" antialiased h-full overflow-x-hidden">
         <Background>
           <Navbar />
           {children}

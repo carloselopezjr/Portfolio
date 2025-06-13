@@ -30,6 +30,8 @@ const Tools = [
   { name: "Vercel", icon: "images/vercel.svg" },
   { name: "Blender", icon: "/images/blender.svg" },
   { name: "Linux", icon: "images/Linux.svg" },
+  { name: "Unity", icon: "images/unity.svg"},
+  { name: "Oracle VirtualBox", icon: "images/VirtualBox.svg"}
 ];
 
 export default function SkillBox() {
@@ -142,7 +144,7 @@ export default function SkillBox() {
                 title={tool.name}
                 width={75}
                 height={75}
-                className={`${tool.name === "Blender" ? "w-20 h-[75px]" : tool.name === "Linux" ? "w-20 h-[75px]" : tool.name ==="Vercel" ? "w-20 h-[75px]" : ""}`}
+                className={`${tool.name === "Blender" ? "w-20 h-[75px]" : tool.name === "Linux" ? "w-20 h-[75px]" : tool.name ==="Vercel" ? "w-20 h-[75px]" : tool.name === "Unity" ? "w-20 h-[75px]" : tool.name === "Oracle VirtualBox" ? "w-20 h-[75px]" : ""}`}
               />
             </motion.div>
           ))}
