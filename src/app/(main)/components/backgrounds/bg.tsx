@@ -11,6 +11,7 @@ export default function Background({ children }: {children: React.ReactNode}) {
     : pathname === "/projects" ? "bg-[url(/images/alien_red.webp)]"
     : pathname === "/experience" ? "bg-[url(/images/SkyBox.jpg)]"
     : pathname === "/skills" ? "bg-[url(/images/StarryNight.webp)]"
+    : pathname === "/about" ? "bg-[url(/images/sinister.jpg)]"
     : "";
 
     return (

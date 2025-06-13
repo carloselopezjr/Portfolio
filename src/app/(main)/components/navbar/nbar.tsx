@@ -20,9 +20,15 @@ export default function Navbar() {
         ? "border-[#5148a4] hover:border-[#9990af] hover:shadow-[0_0_12px_#9990af]"
         : pathname === "/skills"
         ? "border-[#4c536c] hover:border-[#616e93] hover:shadow-[0_0_12px_#616e93]"
+        : pathname === "/about"
+        ? "border-[#292546] hover:border-[#6177af] hover:shadow-[0_0_12px_#6177af]"
         : "border-gray-300 hover:border-[#aee7ff] hover:shadow-[0_0_12px_#aee7ff]";
 
   const navItems = [
+    {
+      href: "/about",
+      label: "About",
+    },
     {
       href: "/projects",
       label: "Projects",

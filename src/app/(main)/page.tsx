@@ -4,10 +4,14 @@ import React from "react";
 import { Typewriter } from "react-simple-typewriter";
 import Listening from "./components/recently/scrobbles";
 import TopAlbums from "./components/albums/tal";
+import { motion } from "motion/react";
 
 export default function Main() {
   return (
-    <div className="">
+    <motion.div
+      initial={{ opacity: 0, y: 50 }}
+      animate={{ opacity: 1, y: 0 }}
+      transition={{ duration: 1, ease: 'easeInOut' }}>
       <div className="font-garamond flex justify-center pt-4  ">
         <h1 className="underline underline-offset-4 animation font-semibold p-5 rounded-xl text-5xl text-white animation duration-300 ease-in-out hover:scale-105 ">
           <Typewriter
@@ -26,6 +30,6 @@ export default function Main() {
 
         <TopAlbums />
       </div>
-    </div>
+    </motion.div>
   );
 }

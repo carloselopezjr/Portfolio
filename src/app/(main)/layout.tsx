@@ -54,8 +54,8 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" className={`${cinzel.variable} ${garamond.variable} h-full`}>
-      <body className=" antialiased h-full">
+    <html lang="en" className={`${cinzel.variable} ${garamond.variable} h-full bg-transparent`}>
+      <body className=" antialiased h-full bg-transparent">
         <Background>
           <Navbar />
           {children}

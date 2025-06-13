@@ -32,12 +32,12 @@ export default function Listening() {
     );
 
   return (
-    <div>
+    <div className="">
       <h1 className="text-2xl lg:text-2xl font-bold text-center">
         Currently Listening To:
       </h1>
       <div className="w-full flex flex-col items-center">
-        <div className="bg-transparent z-0 p-14 rounded-xl backdrop-blur-md transition-all duration-300 ease-in-out">
+        <div className="bg-transparent p-14 rounded-xl backdrop-blur-md transition-all duration-300 ease-in-out">
           <motion.div
             className=""
             initial={{ opacity: 0, scale: 1 }}
