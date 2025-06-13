@@ -20,7 +20,7 @@ export async function GET() {
     const albums = data.topalbums.album.map((album: any) => ({
         name: album.name,
         artist: album.artist.name,
-        image: album.image[2]["#text"], // medium sized image
+        image: album.image[2]?.["#text"], // medium sized image
         playcount: album.playcount,
         url: album.url,
     }));
