@@ -64,7 +64,7 @@ export default function Navbar() {
       <nav
         className={`font-cinzel text-2xl font-semibold text-[#dfe6f3] backdrop-blur-xl p-6 ${borderColor} border-2 rounded-xl hover:transition duration-300 ease-in-out`}
       >
-        <ul className="flex space-x-8">
+        <ul className="lg:flex lg:space-x-8">
           {/* conditional underline */}
           <li
             className={`mr-auto 
@@ -89,6 +89,10 @@ export default function Navbar() {
   >
     ☰
   </button>
+  {/* got lazy here */}
+  <Link href="/" className="lg:hidden ml-8 hover:underline transition-all duration-300 ease-in-out" > 
+  Carlos E. Lopez
+  </Link>
 
   <AnimatePresence initial={false}>
     {menuOpen && (
