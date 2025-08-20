@@ -4,7 +4,7 @@ import { motion } from "motion/react";
 const experience = [
   {
     name: "Hackathon Organizer",
-    img: "/images/KnightHacks.jpg",
+    img: "/images/knighthacks.jpg",
     company: "Knight Hacks",
     date: "July 2025 - Present",
     description: "Over the summer I joined Knight Hacks' team as a Hackathon Organizer! In this role I will be working alongside the Knight Hacks team to help orchestrate Knight Hacks VIII, a hackathon encouraging creativity, community, and growth."
@@ -19,7 +19,7 @@ const experience = [
   },
   {
     name: "Project Launch First Place Winner",
-    img: "/images/KnightHacks.jpg",
+    img: "/images/knighthacks.jpg",
     company: "Knight Hacks Project Launch",
     date: "January 2025 - April 2025",
     description: "During spring semester I participated in Knight Hack's Project Launch, a program designed to help students develop their own projects. Here, my team won for our project Kmodo, a platform that aims to streamline hackathon organization and participation.",
