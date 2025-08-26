@@ -64,10 +64,6 @@ const Projects = [
         name: "PostgreSQL",
         img: "/images/postgreSQL.svg",
       },
-      {
-        name: "Python",
-        img: "/images/python.svg",
-      },
     ],
     description:
       "Kmodo is a centralized hackathon dashboard designed streamline the hackathon experience. It brings event creation, organization, and participation into one cohesive platform, making hackathons more accessible and enjoyable.",
