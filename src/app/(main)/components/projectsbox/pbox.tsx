@@ -33,7 +33,7 @@ const Projects = [
   
   {
     name: "HandScape",
-    image: "/images/test.png",
+    image: "/images/handscape.png",
     date: "Sept 2025 - Sept 2025",
     stack: [
       {
