@@ -1,25 +1,28 @@
 import Image from "next/image";
 import { motion } from "motion/react";
 
-// too lazy to fix this at the moment "If it ain't broke don't fix it"
-
+// Add C++ , SQL, PostgreSQL, Java, Vite, Three.js, MediaPipe, MongoDB
 const Languages = [
   { name: "Python", icon: "images/python.svg" },
   { name: "C#", icon: "images/csharp.svg" },
-  { name: "C", icon: "images/c.svg" }, // resize later
+  { name: "C++", icon: "images/cpp.svg" },
+  { name: "C", icon: "images/c.svg" },
   { name: "HTML", icon: "images/html.svg" },
   { name: "CSS", icon: "images/css.svg" },
   { name: "JavaScript", icon: "images/javascript.svg" },
   { name: "TypeScript", icon: "images/typescript.svg" },
-  { name: "Lua", icon: "images/lua.svg" },
+  { name: "Java", icon: "images/java.svg" },
+  { name: "SQL", icon: "images/SQL.svg"}
 ];
 
 const FrameworksPackages = [
   { name: "React", icon: "images/react.svg" },
   { name: "Next.js", icon: "images/nextjs.svg" },
-  { name: "Tailwind CSS", icon: "images/tailwind.svg" }, // resize later
+  { name: "Tailwind CSS", icon: "images/tailwind.svg" }, 
   { name: ".Net", icon: "images/NET.svg" },
   { name: "Node.js", icon: "images/node.svg" },
+  { name: "Vite", icon: "images/vite.svg" },
+  { name: "Three.js", icon: "images/threejs.svg" },
 ];
 
 const Tools = [
@@ -31,7 +34,8 @@ const Tools = [
   { name: "Blender", icon: "/images/blender.svg" },
   { name: "Linux", icon: "images/Linux.svg" },
   { name: "Unity", icon: "images/unity.svg"},
-  { name: "Oracle VirtualBox", icon: "images/VirtualBox.svg"}
+  { name: "Oracle VirtualBox", icon: "images/VirtualBox.svg"},
+  { name: "PostgreSQL", icon: "images/postgreSQL.svg"}
 ];
 
 export default function SkillBox() {
@@ -42,7 +46,6 @@ export default function SkillBox() {
         <motion.div
           // box
           className="flex-1 text-center rounded-xl border-2 border-[#232234] backdrop-blur-md p-4 m-4 lg:m-0 shadow-lg justify-center"
-          // lg:mt-10 lg:flex lg:flex-row 
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ duration: 1, ease: "easeInOut" }}
@@ -72,7 +75,7 @@ export default function SkillBox() {
                   title={lang.name}
                   width={75}
                   height={75}
-                  className={`${lang.name === "C" ? "scale-110" : "" }`}
+                  className={`${lang.name === "C" ? "scale-110" : ""}`}
                 />
               </motion.div>
             ))}

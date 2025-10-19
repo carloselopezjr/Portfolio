@@ -1,21 +1,29 @@
 import Image from "next/image";
 import { motion } from "motion/react";
 
+// Bold keywords
 const experience = [
+  {
+    name: "Research Assistant",
+    img: "/images/ucf.webp",
+    company: "UCF S.A.G.E Lab",
+    date: "September 2025 - Present",
+    description: "As part of my research, I’ve been exploring how AI coding agents are used in open-source software development by analyzing over 20,000 pull requests across 500+ repositories. Through data analysis and hands-on review of commits, I’ve found it really interesting to see how developers actually collaborate with AI tools in real projects!",
+  },
   {
     name: "Hackathon Organizer",
     img: "/images/knighthacks.jpg",
     company: "Knight Hacks",
     date: "July 2025 - Present",
-    description: "Over the summer I joined Knight Hacks' team as a Hackathon Organizer! In this role I will be working alongside the Knight Hacks team to help orchestrate Knight Hacks VIII, a hackathon encouraging creativity, community, and growth."
+    description: "Over the summer, I joined the Knight Hacks team as a Hackathon Organizer, becoming the Collaborations Liaison where I serve as the main point of contact for RSOs and help plan Knight Hacks VIII — a hackathon that brings together over 1,000 participants. In this role, I work closely with officers across 10+ student organizations to organize workshops, manage logistics, and foster collaboration within the CECS community, building connections that strengthen UCF’s growing tech ecosystem."
   },
   {
-    name: "Undergraduate Research Assistant",
+    name: "Research Assistant",
     img: "/images/adc.png",
-    company: "UCF ADC Research Lab",
-    date: "March 2025 - Present",
+    company: "UCF Analytics, Decision, and Control Research Lab",
+    date: "March 2025 - August 2025",
     description:
-      "Working in the ADC Research Lab at UCF, my research focuses on developing an addon to Microsoft Flight Simulator that integrates real-world flight data to simulate past flight paths within the simulator environment. The goal is to enable accurate visual reconstruction of real flight events, providing a powerful tool for analysis and research into flight behavior. ",
+      "At the ADC Research Lab at UCF, I developed an addon for Microsoft Flight Simulator that integrated real-world flight data to simulate past flight paths for analysis and research into flight behavior. The project involved building a Windows application in C# using the SimConnect API to interface with the simulator, enabling aircraft repositioning, AI plane spawning, and dynamic coordinate updates for accurate visual replay of flight events.",
   },
   {
     name: "Project Launch First Place Winner",
@@ -36,7 +44,7 @@ const experience = [
     img: "/images/ucf.webp",
     company: "University of Central Florida",
     date: "August 2024 - Present",
-    description: "Currently in my first year of undergraduate studies at the University of Central Florida.",
+    description: "Currently in my second year of undergraduate studies at the University of Central Florida.",
   },
 ];
 
@@ -63,8 +71,8 @@ export default function ExperienceBox() {
             <h1 className="text-2xl font-bold text-black">{exp.name}</h1>
           </div>
           <h2 className="text-xl lg:text-lg text-gray-900">
-            {" "}
-            {exp.company} | {exp.date}{" "}
+            
+            {exp.company} | {exp.date}
           </h2>
           <h3 className="mt-2 text-gray-800 text-lg lg:text-base"> {exp.description} </h3>
         </motion.div>

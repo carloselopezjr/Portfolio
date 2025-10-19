@@ -3,6 +3,67 @@ import { motion } from "motion/react";
 
 const Projects = [
   {
+    name: "Fashion Society",
+    image: "/images/fs.png",
+    date: "Oct 2025 - Present",
+    stack: [
+      {
+        name: "React",
+        img: "/images/react.svg",
+      },
+      {
+        name: "Vite",
+        img: "/images/vite.svg",
+      },
+      {
+        name: "TypeScript",
+        img: "/images/typescript.svg",
+      },
+      {
+        name: "TailwindCSS",
+        img: "/images/tailwind.svg",
+      },
+      {
+        name: "MongoDB",
+        img: "/images/mongo.svg",
+      }
+    ],
+    description: "Currently developing UCF's Fashion Society website, showcasing their events, members, and mission to the UCF community."
+  },
+  
+  {
+    name: "HandScape",
+    image: "/images/test.png",
+    date: "Sept 2025 - Sept 2025",
+    stack: [
+      {
+        name: "React",
+        img: "/images/react.svg",
+      },
+      {
+        name: "Next.js",
+        img: "/images/next.svg",
+      },
+      {
+        name: "Three.js",
+        img: "/images/threejs.svg",
+      },
+      {
+        name: "MediaPipe",
+        img: "/images/mediapipe.svg",
+      },
+      {
+        name: "TailwindCSS",
+        img: "/images/tailwind.svg"
+      },
+      {
+        name: "TypeScript",
+        img: "/images/typescript.svg",
+      }
+    ],
+    description: "HandScape is an interactive 3D sandbox that allows users to spawn and manipulate virtual objects entirely through hand gestures. It recognizes five gestures that let users create, scale, rotate, and move objects in real time."
+  },
+  {
     name: "Riffs",
     image: "/images/riffs.png",
     date: "Apr 2025 - Apr 2025",
@@ -34,7 +95,7 @@ const Projects = [
   {
     name: "Kmodo",
     image: "/images/kmodo.webp",
-    date: "Jan 2025 - Present",
+    date: "Jan 2025 - May 2025",
     stack: [
       {
         name: "React",
@@ -128,27 +189,6 @@ const Projects = [
     ],
     description:
       "Spark-A-Hack was my first Hackathon project. It leverages Gemini's API to generate winning hackathon project ideas based on over 30,000 winning submissions from DevPost. ",
-  },
-  {
-    name: "Project Diablo",
-    image: "/images/crescendo.webp",
-    date: "May 2025 - Present",
-    stack: [
-      {
-        name: "Lua",
-        img: "/images/lua.svg",
-      },
-      {
-        name: "Roblox Studio",
-        img: "/images/robloxstudio.svg",
-      },
-      {
-        name: "Blender",
-        img: "/images/blender.svg",
-      },
-      
-    ],
-    description: "Project Diablo is a Roblox game that I am currently developing with a team of friends. It plans to be an hack and slash PVP game with gameplay inspired by GunZ movement and Devil May Cry combat mechanics.",
   },
 ];
 

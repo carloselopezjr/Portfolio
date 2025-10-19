@@ -31,7 +31,6 @@ export default function TopAlbums() {
                 animate={{ opacity: 1, scale: 1 }}
                 transition={{ delay: index * 0.1, duration: 0.5, ease: "easeInOut" }}
               key={index}
-              className=""
             >
               <Image
                 className=" hover:scale-110 transition-all duration-150 ease-in-out hover:shadow-lg"
