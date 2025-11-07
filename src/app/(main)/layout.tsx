@@ -17,7 +17,7 @@ const garamond = EB_Garamond({
 
 export const metadata: Metadata = 
 {
-  title: "Carlos Emilio Lopez",
+  title: "Carlos Lopez", // Carlos E Lopez or Carlos Lopez idk
   description: "Carlos E. Lopez is an undergraduate Computer Science student at the University of Central Florida.",
   keywords: [
     "Carlos Lopez",
@@ -26,7 +26,8 @@ export const metadata: Metadata =
     "Carlos Lopez UCF",
     "Carlos Lopez Computer Science",
     "Carlos e Lopez developer UCF",
-    "Carlos e lopez",
+    "Carlos e Lopez",
+    "Carlos e Lopez UCF",
     "UCF",
     "UCF CECS",
     "University of Central Florida",

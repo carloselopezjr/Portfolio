@@ -12,7 +12,7 @@ export default function Main() {
       <div className="font-garamond flex justify-center pt-4  ">
         <h1 className="underline underline-offset-4 animation font-semibold p-5 rounded-xl text-5xl text-white animation duration-300 ease-in-out hover:scale-105 ">
           <Typewriter
-            words={["Yo, I'm Carlos."]}
+            words={["Hi, I'm Carlos."]}
             cursor
             loop={1}
             typeSpeed={80}
