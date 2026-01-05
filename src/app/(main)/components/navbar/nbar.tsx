@@ -60,7 +60,7 @@ export default function Navbar() {
   ];
 
   return (
-    <div className=" rounded-full scale-90 p-2">
+    <div className="rounded-full scale-90 p-2">
       <nav
         className={`font-cinzel text-2xl font-semibold text-[#dfe6f3] backdrop-blur-xl p-6 ${borderColor} border-2 rounded-xl hover:transition duration-300 ease-in-out`}
       >

@@ -9,7 +9,7 @@ function generateApiSig(params: Record<string, string>, sharedSecret: string): s
 }
 
 export async function GET() {
-  const apiKey = process.env.LASTFM_API_KEY!; // ! non-null assertion, acknowledging var existence
+  const apiKey = process.env.LASTFM_API_KEY!;
   const sharedSecret = process.env.LASTFM_SHARED_SECRET!;
   const token = process.env.LASTFM_TOKEN!;
 
@@ -23,7 +23,7 @@ export async function GET() {
   const apiSig = generateApiSig(params, sharedSecret);
 
   const query = new URLSearchParams({
-    ...params, // ... = Spread operator to take all key/val pairs
+    ...params, // Spread operator to take all key/val pairs
     api_sig: apiSig, 
     format: 'json', // Want response as a json
   });

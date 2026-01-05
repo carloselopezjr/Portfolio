@@ -30,7 +30,7 @@ const Projects = [
     ],
     description: "Currently developing UCF's Fashion Society website, showcasing their events, members, and mission to the UCF community."
   },
-  
+
   {
     name: "HandScape",
     image: "/images/handscape.png",
@@ -150,7 +150,8 @@ const Projects = [
         name: "React",
         img: "/images/react.svg",
       },
-      { name: "LastFm",
+      {
+        name: "LastFm",
         img: "/images/lastFm.svg"
       }
     ],
@@ -192,53 +193,66 @@ const Projects = [
   },
 ];
 
+const testArr = [
+  {
+    name: "Github"
+  },
+  {
+    name: "Visit!"
+  },
+  {
+    name: "Devpost"
+  }
+
+];
+
 export default function ProjectBox() {
   return (
-    <div className="flex lg:mt-10 lg:flex lg:flex-row justify-center w-full flex-wrap">
+    <div className="mx-auto max-w-5xl grid grid-cols-3 gap-4 mt-4">
       {Projects.map((proj, index) => (
-        <motion.div
-          key={proj.name}
-          initial={{ scale: 1, opacity: 0 }}
-          animate={{ scale: 1, opacity: 1 }}
-          transition={{ delay: index * 0.2, duration: 1, ease: "easeInOut" }}
-          className="w-[350px] h-[350px] m-2 lg:scale-110 lg:relative group lg:w-[250px] lg:h-[300px] border-2 border-[#9a4129] rounded-xl flex overflow-hidden backdrop-blur-md shadow-xl hover:transition-all hover:duration-300 hover:ease-in-out hover:scale-125 hover:shadow-[0_0_12px_#e3612f] hover:border-[#e3612f]"
-        >
-          {/* actual box  */}
-          <div className="lg:pb-12 flex flex-col items-center justify-center h-full w-full hover:blur-sm">
-            <Image
-              className="rounded-xl"
-              src={proj.image}
-              alt={proj.name}
-              width={150}
-              height={150}
-            />
-            <h1 className="text-3xl lg:text-xl font-bold mt-2 text-black">{proj.name}</h1>
-            <h2 className="text-xl lg:text-md font-semibold text-gray-800">{proj.date}</h2>
+        <div key={proj.name} className=" border flex flex-col rounded-lg bg-orange-800/70 backdrop-blur-md overflow-hidden h-[525px] max-h-[800px] hover:border-black hover:z-10">
+          <Image
+            key={proj.name}
+            src={proj.image}
+            alt={proj.name}
+            height={50}
+            width={150}
+          />
+
+          <div>
+            <h1 className=" pl-4 text-left text-2xl ">
+              {proj.name} <span className="text-xs underline text-white/70">{proj.date}</span>
+            </h1>
+
           </div>
-          {/* hover show desc */}
-          <div className="inset-0 absolute bg-[url(/images/TheUtterEast.webp)] bg-blur bg-opacity-100 text-black opacity-0 group-hover:opacity-100 transition-opacity duration-300 p-4 text-[13px]">
-            <div className="p-1 h-full font-semibold text-left text-xl lg:text-sm">
+
+        
+          <div className="text-left">
+            <h1 className="mx-4 ">
               {proj.description}
-              {proj.stack && Array.isArray(proj.stack) && (
-                <div className="mt-6 grid grid-cols-4 gap-2 place-items-center">
-                  {proj.stack.map((st, index) => (
-                    <div key={index} title={st.name} className="">
-                      {" "}
-                      {/* customize tooltip soon */}
-                      <Image
-                        src={st.img}
-                        alt={st.name}
-                        width={45}
-                        height={45}
-                      />
-                    </div>
-                  ))}
-                </div>
-              )}
-            </div>
+            </h1>
           </div>
-        </motion.div>
+
+
+            <div className="grid grid-cols-3 gap-4 mx-4">
+              {proj.stack.map((techStack) => (
+                <h1 key={techStack.name} className="text-sm border rounded-xl mt-4 bg-orange-900 p-1 text-center">
+                  {techStack.name}
+                </h1>
+              ))}
+            </div>
+          
+          <div className={`mt-auto mx-2 pb-4 justify-center ${testArr.length == 3 ? `grid grid-cols-3` : `grid grid-cols-2`}`} >
+            {testArr.map((arr, index) => (
+              <div key={arr.name} className="mx-[14px] ">
+                <h1 className="border p-[2px] rounded-xl">
+                  {arr.name}
+                </h1>
+              </div>
+            ))}
+          </div>
+        </div>
       ))}
     </div>
-  );
-}
+  )
+};
