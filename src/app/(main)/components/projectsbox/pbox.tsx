@@ -3,8 +3,100 @@ import { motion } from "motion/react";
 
 const Projects = [
   {
+    name: "GeoCity",
+    image: "/images/hLanding.png",
+    date: "Jan 2026 - Present",
+    stack: [
+      {
+        name: "TypeScript"
+      },
+      {
+        name: "React"
+      },
+      {
+        name: "Next.js"
+      },
+      {
+        name: "TailwindCSS"
+      },
+      {
+        name: "PostgreSQL"
+      },
+      {
+        name: "Prisma"
+      },
+      {
+        name: "tRPC"
+      },
+      {
+        name: "Some LLM idk yet"
+      },
+      {
+        name: "Weather API"
+      },
+    ],
+    description: "Inspired by GeoCities"
+  },
+  {
+    name: "Chip-8 Emulator",
+    image: "/images/hLanding.png",
+    date: "Dec 2025 - Present",
+    stack: [
+      {
+        name: "C++"
+      },
+      {
+        name: "SDL2"
+      },
+    ],
+    description: "A simple Chip-8 emulator built in C++ using the SDL2 library for graphics and input handling."
+  },
+  {
+    name: "I'm Human",
+    image: "/images/hLanding.png",
+    date: "Nov 2025",
+    stack: [
+      {
+        name: "React"
+      },
+      {
+        name: "Next.js"
+      },
+      {
+        name: "TypeScript"
+      },
+      {
+        name: "TailwindCSS"
+      },
+      {
+        name: "PostgreSQL"
+      },
+      {
+        name: "Prisma"
+      }
+    ],
+    description: "Made a really annoying login for Hack Jam 2025's Worst UI Challenge."
+  },
+  {
+    name: "Fih",
+    image: "/images/fsLanding.png",
+    date: "Nov 2025 - Present",
+    stack: [
+      {
+        name: "Godot"
+      },
+      {
+        name: "GDScript",
+      },
+      {
+        name: "Itch.io"
+      },
+    ],
+    description: "Sharkbyte 2025",
+  },
+  {
     name: "Fashion Society",
-    image: "/images/fs.png",
+    image: "/images/fsLanding.png",
     date: "Oct 2025 - Present",
     stack: [
       {
@@ -33,8 +125,8 @@ const Projects = [
 
   {
     name: "HandScape",
-    image: "/images/handscape.png",
-    date: "Sept 2025 - Sept 2025",
+    image: "/images/handscapeLanding.png",
+    date: "Sept 2025",
     stack: [
       {
         name: "React",
@@ -65,36 +157,34 @@ const Projects = [
   },
   {
     name: "Riffs",
-    image: "/images/riffs.png",
-    date: "Apr 2025 - Apr 2025",
+    image: "/images/riffsLanding.png",
+    date: "Apr 2025",
     stack: [
       {
         name: "TypeScript",
-        img: "/images/typescript.svg",
       },
       {
         name: "TailwindCSS",
-        img: "/images/tailwind.svg",
       },
       {
         name: "React",
-        img: "/images/react.svg",
       },
       {
         name: "Next.js",
-        img: "/images/next.svg",
       },
       {
         name: "FL Studio",
-        img: "/images/flstudio.webp",
       },
+      {
+        name: "Pitchy API"
+      }
     ],
     description:
       "     Riffs is a creative music app where you can hum a melody, convert it into guitar tabs, edit it, and jam out in a Guitar Hero-style game-play experience.",
   },
   {
     name: "Kmodo",
-    image: "/images/kmodo.webp",
+    image: "/images/kmodoLanding.png",
     date: "Jan 2025 - May 2025",
     stack: [
       {
@@ -131,7 +221,7 @@ const Projects = [
   },
   {
     name: "My Portfolio",
-    image: "/images/avatar.webp",
+    image: "/images/portLanding.png",
     date: "Jan 2025 - Present",
     stack: [
       {
@@ -161,7 +251,7 @@ const Projects = [
   {
     name: "Spark-A-Hack",
     image: "/images/spark-a-hack.webp",
-    date: "Sep 2024 - Nov 2024",
+    date: "Oct 2024",
     stack: [
       {
         name: "Gemini API",
@@ -208,51 +298,59 @@ const testArr = [
 
 export default function ProjectBox() {
   return (
-    <div className="mx-auto max-w-5xl grid grid-cols-3 gap-4 mt-4">
-      {Projects.map((proj, index) => (
-        <div key={proj.name} className=" border flex flex-col rounded-lg bg-orange-800/70 backdrop-blur-md overflow-hidden h-[525px] max-h-[800px] hover:border-black hover:z-10">
+    <div className="mx-auto max-w-[1016px] grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 mt-6">
+      {Projects.map((proj) => (
+        <div
+          key={proj.name}
+          className="group border border-orange-200/30 flex flex-col rounded-2xl bg-orange-800/70 backdrop-blur-md shadow-lg hover:border-orange-100/60 transition-[max-height] duration-500 ease-out overflow-hidden max-h-[400px] hover:max-h-[900px]"
+        >
           <Image
             key={proj.name}
             src={proj.image}
             alt={proj.name}
-            height={50}
-            width={150}
+            height={250}
+            width={420}
+            className="w-full object-cover"
           />
 
-          <div>
-            <h1 className=" pl-4 text-left text-2xl ">
-              {proj.name} <span className="text-xs underline text-white/70">{proj.date}</span>
-            </h1>
+          <div className="flex-1 flex flex-col gap-4 p-4">
+            <div className="flex items-start justify-between gap-3">
+              <div className="space-y-1">
+                <h2 className="text-xl font-semibold leading-tight text-left">{proj.name}</h2>
+                <p className="text-xs text-orange-50/80 underline underline-offset-4 text-left">{proj.date}</p>
+              </div>
+            </div>
 
-          </div>
-
-        
-          <div className="text-left">
-            <h1 className="mx-4 ">
+            <p className="text-sm text-left text-orange-50/90 line-clamp-3 group-hover:line-clamp-none transition-[line-height] duration-300 ease-in-out">
               {proj.description}
-            </h1>
-          </div>
+            </p>
 
-
-            <div className="grid grid-cols-3 gap-4 mx-4">
+            <div className="flex flex-wrap gap-2">
               {proj.stack.map((techStack) => (
-                <h1 key={techStack.name} className="text-sm border rounded-xl mt-4 bg-orange-900 p-1 text-center">
+                <span
+                  key={techStack.name}
+                  className="text-[10px] px-3 py-1 rounded-full border border-orange-200/40 bg-orange-900/70"
+                >
                   {techStack.name}
-                </h1>
+                </span>
               ))}
             </div>
-          
-          <div className={`mt-auto mx-2 pb-4 justify-center ${testArr.length == 3 ? `grid grid-cols-3` : `grid grid-cols-2`}`} >
-            {testArr.map((arr, index) => (
-              <div key={arr.name} className="mx-[14px] ">
-                <h1 className="border p-[2px] rounded-xl">
-                  {arr.name}
-                </h1>
+          </div>
+
+
+          {/* nothing
+          <div
+            className={`grid ${testArr.length === 3 ? "grid-cols-3" : "grid-cols-2"} gap-2 border-t border-orange-200/20 bg-orange-900/40 px-3 py-3`}
+          >
+            {testArr.map((arr) => (
+              <div key={arr.name} className="text-center text-sm font-medium rounded-xl border border-orange-200/30 py-2">
+                {arr.name}
               </div>
             ))}
           </div>
+          */}
         </div>
       ))}
     </div>
-  )
-};
+  );
+}

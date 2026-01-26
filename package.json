@@ -9,14 +9,23 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@types/matter-js": "^0.20.2",
+    "class-variance-authority": "^0.7.1",
+    "clsx": "^2.1.1",
     "framer-motion": "^12.15.0",
     "is-number": "^7.0.0",
+    "lodash": "^4.17.21",
     "lucide-react": "^0.473.0",
+    "matter-js": "^0.20.0",
     "motion": "^12.15.0",
     "next": "^15.3.0",
+    "poly-decomp": "^0.3.0",
     "react": "^19.1.0",
     "react-dom": "^19.1.0",
-    "react-simple-typewriter": "^5.0.1"
+    "react-simple-typewriter": "^5.0.1",
+    "svg-path-commander": "^2.1.11",
+    "tailwind-merge": "^3.4.0",
+    "tailwindcss-animate": "^1.0.7"
   },
   "devDependencies": {
     "@eslint/eslintrc": "^3",
