@@ -51,7 +51,7 @@ const experience = [
 export default function ExperienceBox() {
   return (
     <div className="flex pb-8">
-    <div className=" lgscale-110 w-[1000px] mx-auto">
+    <div className=" max-w-[600px] mx-auto">
       {experience.map((exp, index) => (
         <motion.div
           key={index}

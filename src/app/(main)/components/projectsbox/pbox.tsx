@@ -2,6 +2,7 @@ import Image from "next/image";
 import { motion } from "motion/react";
 
 const Projects = [
+  /*
   {
     name: "GeoCity",
     image: "/images/hLanding.png",
@@ -37,9 +38,10 @@ const Projects = [
     ],
     description: "Inspired by GeoCities"
   },
+  */
   {
     name: "Chip-8 Emulator",
-    image: "/images/hLanding.png",
+    image: "/images/tempChip8.png",
     date: "Dec 2025 - Present",
     stack: [
       {
@@ -47,6 +49,9 @@ const Projects = [
       },
       {
         name: "SDL2"
+      },
+      {
+        name: "CMake"
       },
     ],
     description: "A simple Chip-8 emulator built in C++ using the SDL2 library for graphics and input handling."
@@ -299,10 +304,13 @@ const testArr = [
 export default function ProjectBox() {
   return (
     <div className="mx-auto max-w-[1016px] grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 mt-6">
-      {Projects.map((proj) => (
-        <div
+      {Projects.map((proj, index) => (
+        <motion.div
           key={proj.name}
-          className="group border border-orange-200/30 flex flex-col rounded-2xl bg-orange-800/70 backdrop-blur-md shadow-lg hover:border-orange-100/60 transition-[max-height] duration-500 ease-out overflow-hidden max-h-[400px] hover:max-h-[900px]"
+          initial={{ scale: 1, opacity: 0 }}
+          animate={{ scale: 1, opacity: 1 }}
+          transition={{ delay: index * 0.2, duration: 1, ease: "easeInOut" }}
+          className="group border-2 border-orange-300/30 flex flex-col rounded-2xl transition-all duration-500 ease-in-out bg-orange-800/70 backdrop-blur-md shadow-lg hover:transition-all hover:duration-300 hover:ease-in-out hover:shadow-[0_0_12px_#e3612f] hover:border-[#e3612f] overflow-hidden max-h-[400px] hover:max-h-[900px]"
         >
           <Image
             key={proj.name}
@@ -349,7 +357,7 @@ export default function ProjectBox() {
             ))}
           </div>
           */}
-        </div>
+        </motion.div>
       ))}
     </div>
   );
