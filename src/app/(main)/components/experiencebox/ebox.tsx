@@ -1,7 +1,7 @@
 import Image from "next/image";
 import { motion } from "motion/react";
 
-// Bold keywords
+// Bold keywords in the future
 const experience = [
   {
     name: "Research Assistant",
@@ -48,36 +48,50 @@ const experience = [
   },
 ];
 
+// To test out new layout, i am lazy right now
+const temp = [
+  {
+    name: "Software Engineer Intern",
+    img: "/images/ucf.webp",
+    company: "UCF College Of Sciences",
+    date: "Jan 2025 - Present",
+    sentenceOne: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+    sentenceTwo: "Vestibulum  rutrum egestas interdum.",
+    sentenceThree: "Morbi sem tortor, accumsan id pellentesque in,  dignissim in urna.",
+  }
+]
+
 export default function ExperienceBox() {
   return (
-    <div className="flex pb-8">
-    <div className=" max-w-[600px] mx-auto">
-      {experience.map((exp, index) => (
-        <motion.div
-          key={index}
-          className="backdrop-blur-md border-[#6d63a8] rounded-xl border-2 p-4 m-4 shadow-lg hover:transition-all hover:duration-300 hover:ease-in-out hover:border-[#9990af]"
-          initial={{ scale: 1, opacity: 0 }}
-          animate={{ scale: 1, opacity: 1 }}
-          transition={{ delay: index * 0.2, duration: 1, ease: "easeInOut" }}
-        >
-          <div className="flex">
-            <Image
-              className="rounded-lg mr-2"
-              src={exp.img}
-              alt={exp.company}
-              width={50}
-              height={50}
-            />
-            <h1 className="text-2xl font-bold text-black">{exp.name}</h1>
+    <div className="justify-center items-center text-center ">
+      {temp.map((temp) => (
+        <div key={temp.name} className="border-t-2 border-b-2 w-[650px] border-[#616E93] transition-all duration-300 ease-in-out text-left">
+          <div className="bg-white/5 backdrop-blur-sm p-4 w-[635px] ml-2">
+            <div className="grid grid-cols-2 w-48">
+              <Image
+                src={temp.img}
+                alt={temp.name}
+                width={75}
+                height={75}
+                className=""
+              />
+              <div className="min-w-[500px] mt-4">
+                <h1 className="font-semibold text-[24px]">{temp.name}</h1>
+                <h2 className="text-[13px] opacity-80">{temp.company} | {temp.date}</h2>
+              </div>
+              <div />
+            </div>
+            <ul className="list-outside list-disc ml-24 w-[400px]">
+              <li className="text-sm">{temp.sentenceOne}</li>
+              <li className="text-sm">{temp.sentenceTwo}</li>
+              <li className="text-sm">{temp.sentenceThree}</li>
+            </ul>
           </div>
-          <h2 className="text-xl lg:text-lg text-gray-900">
-            
-            {exp.company} | {exp.date}
-          </h2>
-          <h3 className="mt-2 text-gray-800 text-lg lg:text-base"> {exp.description} </h3>
-        </motion.div>
+        </div>
       ))}
-    </div>
+      <div className="w-[50vw]">
+
+      </div>
     </div>
   );
 }
