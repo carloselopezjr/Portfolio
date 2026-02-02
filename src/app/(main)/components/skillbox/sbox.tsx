@@ -12,13 +12,13 @@ const Languages = [
   { name: "JavaScript", icon: "images/javascript.svg" },
   { name: "TypeScript", icon: "images/typescript.svg" },
   { name: "Java", icon: "images/java.svg" },
-  { name: "SQL", icon: "images/SQL.svg"}
+  { name: "SQL", icon: "images/SQL.svg" }
 ];
 
 const FrameworksPackages = [
   { name: "React", icon: "images/react.svg" },
   { name: "Next.js", icon: "images/nextjs.svg" },
-  { name: "Tailwind CSS", icon: "images/tailwind.svg" }, 
+  { name: "Tailwind CSS", icon: "images/tailwind.svg" },
   { name: ".Net", icon: "images/NET.svg" },
   { name: "Node.js", icon: "images/node.svg" },
   { name: "Vite", icon: "images/vite.svg" },
@@ -33,126 +33,67 @@ const Tools = [
   { name: "Vercel", icon: "images/vercel.svg" },
   { name: "Blender", icon: "/images/blender.svg" },
   { name: "Linux", icon: "images/Linux.svg" },
-  { name: "Unity", icon: "images/unity.svg"},
-  { name: "Oracle VirtualBox", icon: "images/VirtualBox.svg"},
-  { name: "PostgreSQL", icon: "images/postgreSQL.svg"}
+  { name: "Unity", icon: "images/unity.svg" },
+  { name: "Oracle VirtualBox", icon: "images/VirtualBox.svg" },
+  { name: "PostgreSQL", icon: "images/postgreSQL.svg" }
 ];
 
 export default function SkillBox() {
   return (
-    <div className="lg:scale-90 flex flex-col w-full">
-      <div className="flex flex-col lg:flex-row gap-4 w-full">
-        {/* Languages */}
-        <motion.div
-          // box
-          className="flex-1 text-center rounded-xl border-2 border-[#232234] backdrop-blur-md p-4 m-4 lg:m-0 shadow-lg justify-center"
-          initial={{ opacity: 0 }}
-          animate={{ opacity: 1 }}
-          transition={{ duration: 1, ease: "easeInOut" }}
-        >
-          <h1 className="font-bold text-4xl mb-4">Languages</h1>
-          <motion.div
-            className="grid grid-cols-3 gap-1 lg:grid-cols-5 lg:gap-2 place-items-center"
-            initial={{ opacity: 0 }}
-            animate={{ opacity: 1 }}
-            transition={{ duration: 0.5, ease: "easeInOut" }}
-          >
-            {Languages.map((lang, index) => (
-              <motion.div
-                key={index}
-                className="p-4 rounded-xl bg-gray-950 bg-opacity-60 border-[#616e93] border-2 hover:bg-gray-900 hover:transition-all hover:duration-300 hover:ease-in-out hover:scale-110 hover:border-[#7b8ba8] hover:bg-opacity-60"
-                initial={{ opacity: 0 }}
-                animate={{ opacity: 1 }}
-                transition={{
-                  delay: index * 0.2,
-                  duration: 0.5,
-                  ease: "easeInOut",
-                }}
-              >
-                <Image
-                  src={lang.icon}
-                  alt={lang.name}
-                  title={lang.name}
-                  width={75}
-                  height={75}
-                  className={`${lang.name === "C" ? "scale-110" : ""}`}
-                />
-              </motion.div>
-            ))}
-          </motion.div>
-        </motion.div>
 
-        {/* Frameworks/Packages */}
-        <motion.div
-          // box
-          className="flex-1 text-center rounded-xl border-2 border-[#232234] backdrop-blur-md p-4 m-4 lg:m-0 shadow-lg justify-center"
-          
-          initial={{ opacity: 0 }}
-          animate={{ opacity: 1 }}
-          transition={{ duration: 0.5, ease: "easeInOut" }}
-        >
-          <h1 className="font-bold text-4xl mb-4">Frameworks/Packages</h1>
-          <div className="grid grid-cols-3 gap-1 lg:grid-cols-5 lg:gap-2 place-items-center">
-            {FrameworksPackages.map((fpack, index) => (
-              <motion.div
-                key={index}
-                className="p-4 rounded-xl bg-gray-950 border-[#616e93] bg-opacity-60 border-2 hover:bg-gray-900 hover:transition-all hover:duration-300 hover:ease-in-out hover:scale-110 hover:border-[#7b8ba8] hover:bg-opacity-60"
-                initial={{ opacity: 0 }}
-                animate={{ opacity: 1 }}
-                transition={{
-                  delay: index * 0.2,
-                  duration: 0.5,
-                  ease: "easeInOut",
-                }}
-              >
-                <Image
-                  src={fpack.icon}
-                  alt={fpack.name}
-                  title={fpack.name}
-                  className={`${fpack.name === "Tailwind CSS" ? "w-20 h-[75px]" : ""}`}
-                  width={75}
-                  height={75}
-                />
-              </motion.div>
-            ))}
-          </div>
-        </motion.div>
+    <div className="mt-8 grid grid-cols-3 mx-20 min-h-screen">
+      <div className="">
+        <h1 className="font-semibold text-2xl">
+          Languages
+        </h1>
+        <div className="grid grid-cols-3 gap-2 place-items-center mx-[56px] mt-3">
+          {Languages.map((lang) => (
+            <div key={lang.name} className="w-20 h-20 bg-[#262531] border-2 border-[#616E93] rounded-xl flex flex-col items-center justify-center hover:scale-105 hover:shadow-[0_0_12px_#616E93] transition-all duration-300 ease-in-out">
+              <Image
+                src={lang.icon}
+                alt={lang.name}
+                width={52.5}
+                height={52.5}
+              />
+            </div>
+          ))}
+        </div>
       </div>
-
-      {/* Tools */}
-      <motion.div
-        // box
-        className=" flex-1 text-center rounded-xl border-2 border-[#232234] backdrop-blur-md p-4 m-4 lg:m-0 lg:mt-4 shadow-lg justify-center lg:w-[49.5%]"
-        initial={{ opacity: 0 }}
-        animate={{ opacity: 1 }}
-        transition={{ duration: 0.5, ease: "easeInOut" }}
-      >
-        <h1 className="font-bold text-4xl mb-4">Developer Tools</h1>
-        <div className="grid grid-cols-3 gap-1 lg:grid-cols-5 lg:gap-2 place-items-center">
-          {Tools.map((tool, index) => (
-            <motion.div
-              key={index}
-              className="p-4 rounded-xl bg-gray-950 bg-opacity-60 border-[#616e93] border-2 hover:bg-gray-900 hover:transition-all hover:duration-300 hover:ease-in-out hover:scale-110 hover:border-[#7b8ba8] hover:bg-opacity-60"
-              initial={{ opacity: 0 }}
-              animate={{ opacity: 1 }}
-              transition={{
-                delay: index * 0.2,
-                duration: 0.5,
-                ease: "easeInOut",
-              }}
-            >
+      <div>
+        <h1 className="font-semibold text-2xl">
+          Frameworks & Packages
+        </h1>
+        <div className="grid grid-cols-3 gap-2 place-items-center mx-[56px] mt-3">
+          {FrameworksPackages.map((framework) => (
+            <div key={framework.name} className="w-20 h-20 bg-[#262531] border-2 border-[#616E93] rounded-xl flex flex-col items-center justify-center hover:scale-105 hover:shadow-[0_0_12px_#616E93] transition-all duration-300 ease-in-out">
+              <Image
+                src={framework.icon}
+                alt={framework.name}
+                width={52.5}
+                height={52.5}
+              />
+            </div>
+          ))}
+        </div>
+      </div>
+      <div>
+        <h1 className="font-semibold text-2xl">
+          Tools
+        </h1>
+        <div className="grid grid-cols-3 gap-2 place-items-center mx-[56px] mt-3">
+          {Tools.map((tool) => (
+            <div key={tool.name} className="w-20 h-20 bg-[#262531] border-2 border-[#616E93] rounded-xl flex flex-col items-center justify-center hover:scale-105 hover:shadow-[0_0_12px_#616E93] transition-all duration-300 ease-in-out">
               <Image
                 src={tool.icon}
                 alt={tool.name}
-                title={tool.name}
-                width={75}
-                height={75}
-                className={`${tool.name === "Blender" ? "w-20 h-[75px]" : tool.name === "Linux" ? "w-20 h-[75px]" : tool.name ==="Vercel" ? "w-20 h-[75px]" : tool.name === "Unity" ? "w-20 h-[75px]" : tool.name === "Oracle VirtualBox" ? "w-20 h-[75px]" : ""}`}
+                width={52.5}
+                height={52.5}
               />
-            </motion.div>
+            </div>
           ))}
         </div>
-      </motion.div>
+      </div>
     </div>
+
   );
 }

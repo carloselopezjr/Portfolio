@@ -13,6 +13,9 @@ export default function Projects() {
             <h1 className="m-6 lg:m-0 font-cinzel text-4xl font-bold underline underline-offset-4 decoration-white drop-shadow-[0_1px_4px_rgba(0,0,0,0.45)]"> 
                 <Typewriter words = {["Projects"]} loop={1} typeSpeed={85} /> 
             </h1>
+            <h2 className="mt-4 text-xs text-center "> {/* Uhhh maybe */}
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+            </h2>
             <ProjectBox/>
         </div>
         </div>

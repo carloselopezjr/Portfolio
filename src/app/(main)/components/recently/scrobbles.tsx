@@ -18,39 +18,29 @@ export default function Listening() {
   if (!track) return null;
 
   return (
-    <div className="">
-      <h1 className="text-2xl lg:text-2xl font-bold text-center">
-        Currently Listening To:
+    <div className="bg-gray-50/5 max-w-[280px] h-[325px] rounded-xl">
+      <h1 className="mt-2 text-2xl font-bold text-center">
+        Listening Now
       </h1>
-      <div className="w-full flex flex-col items-center">
-        <div className="bg-transparent p-14 rounded-xl backdrop-blur-md transition-all duration-300 ease-in-out">
-          <motion.div
-            className=""
-            initial={{ opacity: 0 }}
-            animate={{ opacity: 1, scale: 1 }}
-            transition={{ duration: 0.75, ease: "easeInOut" }}
-          >
-            <Image
-              className=" rounded-xl mb-2"
-              src={track.image}
-              alt={`${track.name} by ${track.artist}`}
-              width={200}
-              height={250}
-            />
-            <Link
-              href={track.url}
-              className="mt-4 text-lg font-bold hover:underline"
-            >
-              {" "}
-              {track.name}{" "}
-            </Link>
-            <h2 className="text-md font-semibold opacity-90">
-              {" "}
-              {track.artist}{" "}
-            </h2>
-          </motion.div>
-        </div>
+      <Image
+        className="mt-2 rounded-xl mx-auto"
+        src={track.image}
+        alt={`${track.name} by ${track.artist}`}
+        width={200}
+        height={250}
+      />
+      <div className="p-0 bg-white/10 rounded-[6px] mt-4 border-white/20 mx-[40px]">
+        <Link
+          href={track.url}
+          className=" text-xs text-center font-bold hover:underline"
+        >
+          {track.name}
+        </Link>
+        <h2 className="text-[10px] font-semibold opacity-70">
+          {track.artist}
+        </h2>
       </div>
+
     </div>
   );
 }
