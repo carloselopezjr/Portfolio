@@ -41,7 +41,6 @@ export default function Main() {
       </div>
 
       <div className=" backdrop-blur-sm border border-white/10 rounded-2xl p-6 shadow-lg lg:w-[58%] 2xl:w-[38%] lg:h-[450px] mx-auto lg:flex">
-        <Listening />
 
         <TopAlbums />
       </div>

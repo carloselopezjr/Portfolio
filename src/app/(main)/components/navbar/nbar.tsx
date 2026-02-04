@@ -19,10 +19,8 @@ export default function Navbar() {
       ? "border-[#9a4129] hover:border-[#e3612f] hover:shadow-[0_0_12px_#e3612f]"
       : pathname === "/experience"
       ? "border-[#5148a4] hover:border-[#9990af] hover:shadow-[0_0_12px_#9990af]"
-      : pathname === "/skills"
-      ? "border-[#4c536c] hover:border-[#616e93] hover:shadow-[0_0_12px_#616e93]"
       : pathname === "/about"
-      ? "border-[#292546] hover:border-[#6177af] hover:shadow-[0_0_12px_#6177af]"
+      ? "border-[#4c536c] hover:border-[#616e93] hover:shadow-[0_0_12px_#616e93]"
       : "border-gray-300 hover:border-[#aee7ff] hover:shadow-[0_0_12px_#aee7ff]";
 
   const navItems = [
@@ -37,10 +35,6 @@ export default function Navbar() {
     {
       href: "/experience",
       label: "Experience",
-    },
-    {
-      href: "/skills",
-      label: "Skills",
     },
   ];
 
@@ -62,7 +56,7 @@ export default function Navbar() {
   return (
     <div className="rounded-full scale-90 p-2">
       <nav
-        className={`font-cinzel text-2xl font-semibold text-[#dfe6f3] backdrop-blur-xl p-6 ${borderColor} border-2 rounded-xl hover:transition duration-300 ease-in-out`}
+        className={` text-2xl font-semibold text-[#dfe6f3] backdrop-blur-xl p-6 ${borderColor} border-2 rounded-xl hover:transition duration-300 ease-in-out`}
       >
         <ul className="lg:flex lg:space-x-8">
           {/* conditional underline */}

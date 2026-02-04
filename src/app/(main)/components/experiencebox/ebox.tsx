@@ -5,15 +5,23 @@ const experience = [
   {
     name: "Web Developer",
     img: "/images/ucf.webp",
+    company: "Knights Records",
+    date: "Jan. 2026 - Present",
+    sentenceOne: "Recently selected as a lead developer for Knights Records to create their office website as well as sites for their signed artists!",
+    bg: "bg-white/25",
+  },
+  {
+    name: "Web Developer",
+    img: "/images/ucf.webp",
     company: "UCF Fashion Society",
     date: "Sept. 2025 - Present",
     sentenceOne: "Currently developing a full-stack club showcase site with React, TypeScript, Express, and MongoDB, integrating Google Calendar sync to keep meeting and event info up to date.",
     sentenceTwo: "Designing responsive React components using Tailwind CSS with mobile-first design, ensuring accessibility across all devices.",
     sentenceThree: "Integrating Google Calendar API to fetch and render events dynamically, reducing content maintenance by 90%.",
-    bg: "bg-white/25",
+    bg: "bg-white/20",
   },
   {
-    name: "Research Assistant",
+    name: "Undergraduate Research Assistant",
     img: "/images/ucf.webp",
     company: "UCF S.A.G.E Lab",
     date: "Sept. 2025 - Present",
@@ -33,9 +41,9 @@ const experience = [
     bg: "bg-sky-200/25"
   },
   {
-    name: "Research Assistant",
+    name: "Undergraduate Research Assistant",
     img: "/images/adc.png",
-    company: "UCF Analytics, Decision, and Control Research Lab",
+    company: "UCF Analytics, Decision, and Control Lab",
     date: "March 2025 - Aug. 2025",
     sentenceOne: "Developed a C#/.NET application integrating with the SimConnect API to control Microsoft Flight Simulator, enabling external command of aircraft positioning and event-driven state updates.",
     sentenceTwo: "Implemented AI-controlled aircraft spawning with deterministic position updates to support simulation scenarios.",
@@ -92,16 +100,16 @@ export default function ExperienceBox() {
       {experience.map((item) => (
         <div
           key={item.company}
-          className={`w-full max-w-xl sm:max-w-2xl border border-white/20 ${item.bg} backdrop-blur-lg rounded-2xl shadow-[0_8px_30px_rgba(0,0,0,0.12)] transition-all duration-300 ease-in-out text-left`}
+          className={`w-full max-w-xl sm:max-w-2xl border border-white/20 ${item.bg} backdrop-blur-lg rounded-2xl shadow-[0_8px_30px_rgba(0,0,0,0.12)] transition-all duration-300 ease-in-out text-left hover:scale-105 hover:shadow-[0_0_20px_rgba(0,0,0,0.2)]`}
         >
           <div className="p-4 sm:p-6">
-            <div className="flex flex-col sm:flex-row sm:items-start gap-3 sm:gap-4">
+            <div className="flex items-start gap-3 sm:gap-4">
               <Image
                 src={item.img}
                 alt={item.name}
-                width={64}
+                width={64} // 64 or 75 
                 height={64}
-                className="rounded-xl border border-white/20 shadow-sm"
+                className="rounded-xl border border-white/20 shadow-sm flex-shrink-0"
               />
               <div className="flex-1">
                 <h1 className="font-semibold text-lg sm:text-xl md:text-2xl tracking-tight">
