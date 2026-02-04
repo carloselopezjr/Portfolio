@@ -19,7 +19,7 @@ const FrameworksPackages = [
   { name: "React", icon: "images/react.svg" },
   { name: "Next.js", icon: "images/nextjs.svg" },
   { name: "Tailwind CSS", icon: "images/tailwind.svg" },
-  { name: ".Net", icon: "images/NET.svg" },
+  { name: ".NET", icon: "images/NET.svg" },
   { name: "Node.js", icon: "images/node.svg" },
   { name: "Vite", icon: "images/vite.svg" },
   { name: "Three.js", icon: "images/threejs.svg" },

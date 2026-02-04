@@ -8,7 +8,7 @@ export default function Skills() {
   return (
     <div>
     <div className=" justify-center text-center lg:p-4 lg:mt-8">
-      <h1 className="m-6 lg:m-0 text-4xl font-bold underline underline-offset-4 drop-shadow-[0_1px_4px_rgba(0,0,0,0.45)]">
+      <h1 className="m-6 lg:m-0 text-4xl font-bold underline underline-offset-4">
         about me
       </h1>
       <div className="grid grid-cols-3">

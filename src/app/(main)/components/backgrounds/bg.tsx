@@ -15,7 +15,7 @@ export default function Background({ children }: {children: React.ReactNode}) {
     : "";
 
     return ( //                                                                         change min-h value to fix weird scroll later
-        <div className={` text-[#dfe6f3] antialiased ${background} bg-cover bg-center min-h-full w-full bg-no-repeat `}>
+        <div className={` text-[#dfe6f3] antialiased ${background} bg-cover bg-center min-h-screen w-full bg-no-repeat `}>
             {children}
         </div>
     )
