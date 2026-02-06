@@ -23,18 +23,19 @@ const FrameworksPackages = [
   { name: "Node.js", icon: "images/node.svg" },
   { name: "Vite", icon: "images/vite.svg" },
   { name: "Three.js", icon: "images/threejs.svg" },
+  { name: "MediaPipe", icon: "images/mediapipe.svg" },
+  { name: "Pandas", icon: "images/pandas.svg" },
 ];
 
 const Tools = [
   { name: "Git", icon: "images/git.svg" },
-  { name: "GitHub", icon: "images/github.svg" },
+  { name: "GitHub", icon: "images/GitHub_Invertocat_White.svg" },
   { name: "Visual Studio Code", icon: "images/vscode.svg" },
   { name: "Figma", icon: "images/figma.svg" },
   { name: "Vercel", icon: "images/vercel.svg" },
-  { name: "Blender", icon: "/images/blender.svg" },
   { name: "Linux", icon: "images/Linux.svg" },
   { name: "Unity", icon: "images/unity.svg" },
-  { name: "Oracle VirtualBox", icon: "images/VirtualBox.svg" },
+  { name: "VirtualBox", icon: "images/VirtualBox.svg" },
   { name: "PostgreSQL", icon: "images/postgreSQL.svg" }
 ];
 
@@ -48,13 +49,16 @@ export default function SkillBox() {
         </h1>
         <div className="grid grid-cols-3 gap-2 place-items-center mx-[56px] mt-3">
           {Languages.map((lang) => (
-            <div key={lang.name} className="w-20 h-20 bg-[#262531] border-2 border-[#616E93] rounded-xl flex flex-col items-center justify-center hover:scale-105 hover:shadow-[0_0_12px_#616E93] transition-all duration-300 ease-in-out">
+            <div key={lang.name} className="group relative w-20 h-20 bg-[#262531] border-2 border-[#616E93] rounded-xl flex flex-col items-center justify-center hover:scale-105 hover:shadow-[0_0_12px_#616E93] transition-all duration-300 ease-in-out">
               <Image
                 src={lang.icon}
                 alt={lang.name}
                 width={52.5}
                 height={52.5}
               />
+              <span className="absolute -top-10 left-1/2 -translate-x-1/2 border bg-[#262531] border-[#616E93] text-white text-xs px-2 py-1 rounded opacity-0 group-hover:opacity-100 transition-opacity duration-300 whitespace-nowrap">
+                {lang.name}
+              </span>
             </div>
           ))}
         </div>
@@ -65,13 +69,16 @@ export default function SkillBox() {
         </h1>
         <div className="grid grid-cols-3 gap-2 place-items-center mx-[56px] mt-3">
           {FrameworksPackages.map((framework) => (
-            <div key={framework.name} className="w-20 h-20 bg-[#262531] border-2 border-[#616E93] rounded-xl flex flex-col items-center justify-center hover:scale-105 hover:shadow-[0_0_12px_#616E93] transition-all duration-300 ease-in-out">
+            <div key={framework.name} className="group relative w-20 h-20 bg-[#262531] border-2 border-[#616E93] rounded-xl flex flex-col items-center justify-center hover:scale-105 hover:shadow-[0_0_12px_#616E93] transition-all duration-300 ease-in-out">
               <Image
                 src={framework.icon}
                 alt={framework.name}
                 width={52.5}
                 height={52.5}
               />
+              <span className="absolute -top-10 left-1/2 -translate-x-1/2 border bg-[#262531] border-[#616E93] text-white text-xs px-2 py-1 rounded opacity-0 group-hover:opacity-100 transition-opacity duration-300 whitespace-nowrap">
+                {framework.name}
+              </span>
             </div>
           ))}
         </div>
@@ -82,13 +89,16 @@ export default function SkillBox() {
         </h1>
         <div className="grid grid-cols-3 gap-2 place-items-center mx-[56px] mt-3">
           {Tools.map((tool) => (
-            <div key={tool.name} className="w-20 h-20 bg-[#262531] border-2 border-[#616E93] rounded-xl flex flex-col items-center justify-center hover:scale-105 hover:shadow-[0_0_12px_#616E93] transition-all duration-300 ease-in-out">
+            <div key={tool.name} className="group relative w-20 h-20 bg-[#262531] border-2 border-[#616E93] rounded-xl flex flex-col items-center justify-center hover:scale-105 hover:shadow-[0_0_12px_#616E93] transition-all duration-300 ease-in-out">
               <Image
                 src={tool.icon}
                 alt={tool.name}
                 width={52.5}
                 height={52.5}
               />
+              <span className="absolute -top-10 left-1/2 -translate-x-1/2 border bg-[#262531] border-[#616E93] text-white text-xs px-2 py-1 rounded opacity-0 group-hover:opacity-100 transition-opacity duration-300 whitespace-nowrap">
+                {tool.name}
+              </span>
             </div>
           ))}
         </div>
