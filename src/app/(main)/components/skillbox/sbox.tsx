@@ -48,8 +48,14 @@ export default function SkillBox() {
           Languages
         </h1>
         <div className="grid grid-cols-3 gap-2 place-items-center mx-[56px] mt-3">
-          {Languages.map((lang) => (
-            <div key={lang.name} className="group relative w-20 h-20 bg-[#262531] border-2 border-[#616E93] rounded-xl flex flex-col items-center justify-center hover:scale-105 hover:shadow-[0_0_12px_#616E93] transition-all duration-300 ease-in-out">
+          {Languages.map((lang, index) => (
+            <motion.div
+                      key={lang.name}
+                      initial={{ opacity: 0, scale: 0.95 }}
+                      whileInView={{ opacity: 1, scale: 1 }}
+                      transition={{ delay: index * 0.1, duration: 0.5, ease: "easeInOut" }}
+                      viewport={{ once: true, margin: "-50px" }}
+                      className="group relative w-20 h-20 bg-[#262531] border-2 border-[#616E93] rounded-xl flex flex-col items-center justify-center hover:scale-105 hover:shadow-[0_0_12px_#616E93] hover:transition-all hover:duration-300 hover:ease-in-out">
               <Image
                 src={lang.icon}
                 alt={lang.name}
@@ -59,7 +65,7 @@ export default function SkillBox() {
               <span className="absolute -top-10 left-1/2 -translate-x-1/2 border bg-[#262531] border-[#616E93] text-white text-xs px-2 py-1 rounded opacity-0 group-hover:opacity-100 transition-opacity duration-300 whitespace-nowrap">
                 {lang.name}
               </span>
-            </div>
+            </motion.div>
           ))}
         </div>
       </div>
@@ -68,8 +74,14 @@ export default function SkillBox() {
           Frameworks & Packages
         </h1>
         <div className="grid grid-cols-3 gap-2 place-items-center mx-[56px] mt-3">
-          {FrameworksPackages.map((framework) => (
-            <div key={framework.name} className="group relative w-20 h-20 bg-[#262531] border-2 border-[#616E93] rounded-xl flex flex-col items-center justify-center hover:scale-105 hover:shadow-[0_0_12px_#616E93] transition-all duration-300 ease-in-out">
+          {FrameworksPackages.map((framework, index) => (
+            <motion.div
+              key={framework.name}
+              initial={{ opacity: 0, scale: 0.95 }}
+              whileInView={{ opacity: 1, scale: 1 }}
+              transition={{ delay: index * 0.1, duration: 0.5, ease: "easeInOut" }}
+              viewport={{ once: true, margin: "-50px" }}
+              className="group relative w-20 h-20 bg-[#262531] border-2 border-[#616E93] rounded-xl flex flex-col items-center justify-center hover:scale-105 hover:shadow-[0_0_12px_#616E93] hover:transition-all hover:duration-300 hover:ease-in-out">
               <Image
                 src={framework.icon}
                 alt={framework.name}
@@ -79,7 +91,7 @@ export default function SkillBox() {
               <span className="absolute -top-10 left-1/2 -translate-x-1/2 border bg-[#262531] border-[#616E93] text-white text-xs px-2 py-1 rounded opacity-0 group-hover:opacity-100 transition-opacity duration-300 whitespace-nowrap">
                 {framework.name}
               </span>
-            </div>
+            </motion.div>
           ))}
         </div>
       </div>
@@ -88,8 +100,14 @@ export default function SkillBox() {
           Tools
         </h1>
         <div className="grid grid-cols-3 gap-2 place-items-center mx-[56px] mt-3">
-          {Tools.map((tool) => (
-            <div key={tool.name} className="group relative w-20 h-20 bg-[#262531] border-2 border-[#616E93] rounded-xl flex flex-col items-center justify-center hover:scale-105 hover:shadow-[0_0_12px_#616E93] transition-all duration-300 ease-in-out">
+          {Tools.map((tool, index) => (
+            <motion.div
+              key={tool.name}
+              initial={{ opacity: 0, scale: 0.95 }}
+              whileInView={{ opacity: 1, scale: 1 }}
+              transition={{ delay: index * 0.1, duration: 0.5, ease: "easeInOut" }}
+              viewport={{ once: true, margin: "-50px" }}
+              className="group relative w-20 h-20 bg-[#262531] border-2 border-[#616E93] rounded-xl flex flex-col items-center justify-center hover:scale-105 hover:shadow-[0_0_12px_#616E93] hover:transition-all hover:duration-300 hover:ease-in-out">
               <Image
                 src={tool.icon}
                 alt={tool.name}
@@ -99,7 +117,7 @@ export default function SkillBox() {
               <span className="absolute -top-10 left-1/2 -translate-x-1/2 border bg-[#262531] border-[#616E93] text-white text-xs px-2 py-1 rounded opacity-0 group-hover:opacity-100 transition-opacity duration-300 whitespace-nowrap">
                 {tool.name}
               </span>
-            </div>
+            </motion.div>
           ))}
         </div>
       </div>

@@ -70,7 +70,7 @@ export default function Navbar() {
           // Get rid of my name on mobile
           >
             <Link href="/" className="">
-              Carlos E. Lopez
+              Carlos Lopez
             </Link>
           </li>
 
@@ -84,7 +84,7 @@ export default function Navbar() {
             </button>
             {/* got lazy here */}
             <Link href="/" className="lg:hidden ml-8 hover:underline transition-all duration-300 ease-in-out" >
-              Carlos E. Lopez
+              Carlos Lopez
             </Link>
 
             <AnimatePresence initial={false}>

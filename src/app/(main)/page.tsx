@@ -9,13 +9,13 @@ import Link from "next/link";
 export default function Main() {
   return (
     <div>
-      <div className="font-garamond flex justify-center pt-4  ">
-        <h1 className="underline underline-offset-4 animation font-semibold p-5 rounded-xl text-5xl text-white animation duration-300 ease-in-out hover:scale-105 ">
+      <div className=" flex justify-center pt-4  ">
+        <h1 className="underline underline-offset-4 animation font-semibold p-5 rounded-xl text-5xl text-white animation duration-300 ease-in-out hover:scale-105 min-h-24 flex items-center ">
           <Typewriter
-            words={["Hi, I'm Carlos."]}
-            cursor
+            words={["Hi, I'm Carlos!", "Welcome to my portfolio!"]}
             loop={1}
             typeSpeed={80}
+            deleteSpeed={50}
           />
         </h1>
       </div>
@@ -40,7 +40,7 @@ export default function Main() {
         </Link>
       </div>
 
-      <div className=" backdrop-blur-sm border border-white/10 rounded-2xl p-6 shadow-lg lg:w-[58%] 2xl:w-[38%] lg:h-[450px] mx-auto lg:flex">
+      <div className=" backdrop-blur-sm border border-white/10 rounded-2xl p-6 shadow-lg lg:w-[40%] 2xl:w-[38%] lg:h-[450px] mx-auto flex items-center justify-center">
 
         <TopAlbums />
       </div>
