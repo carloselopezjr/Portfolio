@@ -38,9 +38,9 @@ export default function Listening() {
   if (!track) return null;
 
   return (
-    <div className="bg-gray-50/5 max-w-[280px] h-[325px] rounded-xl">
-      <h1 className="mt-2 text-2xl font-bold text-center">
-        Listening Now
+    <div className="bg-gray-50/5 max-w-[280px] h-[325px] rounded-xl pt-2">
+      <h1 className="mt-2 text-xl font-bold text-center">
+        Recently Listened
       </h1>
       <Image
         className="mt-2 rounded-xl mx-auto"

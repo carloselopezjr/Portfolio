@@ -3,8 +3,8 @@ import { motion } from "motion/react";
 
 const experience = [
   {
-    name: "Web Developer",
-    img: "/images/ucf.webp",
+    name: "Lead Web Developer",
+    img: "/images/KnightsRecords.jpg",
     company: "Knights Records",
     date: "Jan. 2026 - Present",
     sentenceOne: "Recently selected as a lead developer for Knights Records to create their office website as well as sites for their signed artists!",
@@ -12,7 +12,7 @@ const experience = [
   },
   {
     name: "Web Developer",
-    img: "/images/ucf.webp",
+    img: "/images/fs.png",
     company: "UCF Fashion Society",
     date: "Sept. 2025 - Present",
     sentenceOne: "Currently developing a full-stack club showcase site with React, TypeScript, Express, and MongoDB, integrating Google Calendar sync to keep meeting and event info up to date.",
@@ -95,12 +95,14 @@ const highlightKeywords = (text?: string) => {
 
 export default function ExperienceBox() {
   return (
-    // Play around with font-med vs no
     <div className="font-medium flex flex-col items-center text-center text-slate-900 px-3 sm:px-4 gap-6">
-      {experience.map((item) => (
-        <div
+      {experience.map((item, index) => (
+        <motion.div
           key={item.company}
-          className={`w-full max-w-xl sm:max-w-2xl border border-white/20 ${item.bg} backdrop-blur-lg rounded-2xl shadow-[0_8px_30px_rgba(0,0,0,0.12)] transition-all duration-300 ease-in-out text-left hover:scale-105 hover:shadow-[0_0_20px_rgba(0,0,0,0.2)]`}
+          initial={{ scale: 1, opacity: 0 }}
+          animate={{ scale: 1, opacity: 1 }}
+          transition={{ delay: index * 0.2, duration: 1, ease: "easeInOut" }}
+          className={`w-full max-w-xl sm:max-w-2xl border border-white/20 ${item.bg} backdrop-blur-lg rounded-2xl shadow-[0_8px_30px_rgba(0,0,0,0.12)] hover:transition-all hover:duration-300 hover:ease-in-out text-left hover:scale-105 hover:shadow-[0_0_20px_rgba(0,0,0,0.2)]`}
         >
           <div className="p-4 sm:p-6">
             <div className="flex items-start gap-3 sm:gap-4">
@@ -126,8 +128,9 @@ export default function ExperienceBox() {
               {item.sentenceThree && <li>{highlightKeywords(item.sentenceThree)}</li>}
             </ul>
           </div>
-        </div>
+        </motion.div>
       ))}
+      <div className="mt-12"/>
     </div>
   );
 }

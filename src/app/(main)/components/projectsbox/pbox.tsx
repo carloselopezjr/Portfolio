@@ -50,9 +50,6 @@ const Projects = [
       {
         name: "SDL2"
       },
-      {
-        name: "CMake"
-      },
     ],
     description: "A simple Chip-8 emulator built in C++ using the SDL2 library for graphics and input handling."
   },
@@ -82,6 +79,7 @@ const Projects = [
     ],
     description: "Made a really annoying login for Hack Jam 2025's Worst UI Challenge."
   },
+  /* Remove for now
   {
     name: "Fih",
     image: "/images/fsLanding.png",
@@ -99,6 +97,7 @@ const Projects = [
     ],
     description: "Sharkbyte 2025",
   },
+  */
   {
     name: "Fashion Society",
     image: "/images/fsLanding.png",
@@ -253,6 +252,7 @@ const Projects = [
     description:
       "This is my personal portfolio, showcasing everything I've done so far in my journey. I have learned so much while building this, and it has become my pride and joy. I hope you enjoy it as much as I do. ",
   },
+  /*
   {
     name: "Spark-A-Hack",
     image: "/images/spark-a-hack.webp",
@@ -286,6 +286,7 @@ const Projects = [
     description:
       "Spark-A-Hack was my first Hackathon project. It leverages Gemini's API to generate winning hackathon project ideas based on over 30,000 winning submissions from DevPost. ",
   },
+  */
 ];
 
 const testArr = [
@@ -303,7 +304,7 @@ const testArr = [
 
 export default function ProjectBox() {
   return (
-    <div className="mx-auto max-w-[1016px] grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 mt-6">
+    <div className="mx-auto max-w-[1016px] grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 mt-6 mb-12">
       {Projects.map((proj, index) => (
         <motion.div
           key={proj.name}

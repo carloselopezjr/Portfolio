@@ -12,7 +12,7 @@ export default function About() {
   
   return (
     <div>
-    <div className=" justify-center text-center lg:p-4 lg:mt-8">
+    <div className=" justify-center text-center lg:px-4 lg:pt-4 lg:mt-8">
       <h1 className="m-6 lg:m-0 text-4xl font-bold underline underline-offset-4">
         <Typewriter words = {["about me"]} loop={1} typeSpeed={85} /> 
       </h1>
