@@ -2,7 +2,6 @@
 
 import React from "react";
 import { Typewriter } from "react-simple-typewriter";
-import Listening from "./components/recently/scrobbles";
 import TopAlbums from "./components/albums/tal";
 import Link from "next/link";
 

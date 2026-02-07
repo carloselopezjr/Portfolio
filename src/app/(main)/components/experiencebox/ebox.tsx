@@ -52,7 +52,7 @@ const experience = [
   },
 ];
 
-const HIGHLIGHT_KEYWORDS = [
+const keywords = [
   "React",
   "TypeScript",
   "Node.js",
@@ -76,12 +76,12 @@ const HIGHLIGHT_KEYWORDS = [
 
 const highlightKeywords = (text?: string) => {
   if (!text) return text;
-  const escaped = HIGHLIGHT_KEYWORDS.map((keyword) =>
+  const escaped = keywords.map((keyword) =>
     keyword.replace(/[.*+?^${}()|[\]\\]/g, "\\$&")
   );
   const parts = text.split(new RegExp(`(${escaped.join("|")})`, "gi"));
   return parts.map((part, index) =>
-    HIGHLIGHT_KEYWORDS.some(
+    keywords.some(
       (keyword) => keyword.toLowerCase() === part.toLowerCase()
     ) ? (
       <span key={`${part}-${index}`} className="text-red-600 font-semibold">
@@ -102,9 +102,9 @@ export default function ExperienceBox() {
           initial={{ scale: 1, opacity: 0 }}
           animate={{ scale: 1, opacity: 1 }}
           transition={{ delay: index * 0.2, duration: 1, ease: "easeInOut" }}
-          className={`w-full max-w-xl sm:max-w-2xl border border-white/20 ${item.bg} backdrop-blur-lg rounded-2xl shadow-[0_8px_30px_rgba(0,0,0,0.12)] hover:transition-all hover:duration-300 hover:ease-in-out text-left hover:scale-105 hover:shadow-[0_0_20px_rgba(0,0,0,0.2)]`}
+          className={`w-full max-w-xl lg:max-w-2xl border border-white/20 ${item.bg} backdrop-blur-lg rounded-2xl shadow-[0_8px_30px_rgba(0,0,0,0.12)] hover:transition-all hover:duration-300 hover:ease-in-out text-left hover:scale-105 hover:shadow-[0_0_20px_rgba(0,0,0,0.2)]`}
         >
-          <div className="p-4 sm:p-6">
+          <div className="lg:p-6 p-2">
             <div className="flex items-start gap-3 sm:gap-4">
               <Image
                 src={item.img}

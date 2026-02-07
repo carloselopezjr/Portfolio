@@ -31,17 +31,17 @@ export default function About() {
               className="rounded-xl shadow-lg"
             />
             <div className={`absolute rounded-xl -top-12 left-1/2 -translate-x-1/2 bg-gray-900 text-white px-3 py-2 text-sm whitespace-nowrap shadow-lg transition-opacity duration-300 ${showTooltip ? 'opacity-100' : 'opacity-0 pointer-events-none'}`}>
-              That's me! Welcome to my page!
+              That&apos;s me! Welcome to my page!
               
             </div>
           </div>
         </div>
         <div className="text-left min-w-[500px] w-full justify-self-center leading-relaxed">
           <p>
-            Hi! I'm Carlos, a sophomore studying Computer Science at the <span className="font-semibold text-yellow-500 underline decoration-yellow-500">University of Central Florida</span>! I'm very passionate about web development, and I am currently working on building <span className="font-semibold text-red-500 underline decoration-red-500">Knights Records</span>' website, a student-run record label at UCF.
+            Hi! I&apos;m Carlos, a sophomore studying Computer Science at the <span className="font-semibold text-yellow-500 underline decoration-yellow-500">University of Central Florida</span>! I&apos;m very passionate about web development, and I am currently working on building <span className="font-semibold text-red-500 underline decoration-red-500">Knights Records</span>&apos; website, a student-run record label at UCF.
           </p>
           <p>
-            <br/>I view web development as a form of art, where I'm able to blend my creativity with functionality. I love crafting visually appealing websites that provide a seamless user experience!
+            <br/>I view web development as a form of art, where I&apos;m able to blend my creativity with functionality. I love crafting visually appealing websites that provide a seamless user experience!
           </p>
         </div>
         <div className="ml-8">
