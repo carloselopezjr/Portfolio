@@ -6,8 +6,10 @@ import { usePathname } from "next/navigation";
 import { useState } from "react";
 import { motion, AnimatePresence } from "motion/react"
 
+type LucideIconName = "file-text" | "github" | "linkedin";
+
 export default function Navbar() {
-  type LucideIconName = "file-text" | "github" | "linkedin";
+
 
   const pathname = usePathname();
   const [menuOpen, setMenuOpen] = useState(false);
@@ -23,7 +25,7 @@ export default function Navbar() {
             ? "border-[#4c536c] hover:border-[#616e93] hover:shadow-[0_0_12px_#616e93]"
             : "border-gray-300 hover:border-[#aee7ff] hover:shadow-[0_0_12px_#aee7ff]";
 
-  const navItems = [
+  const navItems : { href: string; label: string }[] = [
     {
       href: "/about",
       label: "About",
@@ -38,7 +40,7 @@ export default function Navbar() {
     },
   ];
 
-  const dIcons: { name: LucideIconName; href: string }[] = [
+  const dIcons : { name: LucideIconName; href: string }[] = [
     {
       name: "file-text",
       href: "/Resume.pdf",

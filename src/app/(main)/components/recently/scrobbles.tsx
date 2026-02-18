@@ -4,6 +4,13 @@ import { useEffect, useState } from "react";
 import Image from "next/image";
 import Link from "next/link";
 
+type Track = {
+  name: string;
+  artist: string;
+  url: string;
+  image: string;
+}
+
 const SkeletonLoader = () => (
   <div className="bg-gray-50/5 max-w-[280px] h-[325px] rounded-xl animate-pulse">
     <h1 className="mt-2 text-2xl font-bold text-center opacity-50">
@@ -18,8 +25,9 @@ const SkeletonLoader = () => (
 );
 
 export default function Listening() {
-  // eslint-disable-next-line @typescript-eslint/no-explicit-any
-  const [track, setTrack] = useState<any>(null);
+
+  
+  const [track, setTrack] = useState<Track | null>(null);
   const [isLoading, setIsLoading] = useState(true);
 
   useEffect(() => {
@@ -32,9 +40,15 @@ export default function Listening() {
       .catch(() => setIsLoading(false));
   }, []);
 
-  if (isLoading) return <SkeletonLoader />;
+  if (isLoading) {
+    return (
+    <SkeletonLoader />
+    );
+  }
 
-  if (!track) return null;
+  if (!track) {
+    return null;
+  }
 
   
   return (

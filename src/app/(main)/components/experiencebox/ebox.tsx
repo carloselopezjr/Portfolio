@@ -1,7 +1,26 @@
 import Image from "next/image";
 import { motion } from "motion/react";
 
-const experience = [
+type exp = {
+  name: string;
+  img: string;
+  company: string;
+  date: string;
+  sentenceOne?: string;
+  sentenceTwo?: string;
+  sentenceThree?: string;
+  bg: string;
+}
+
+const experience : exp[] = [
+  {
+    name: "Software Engineer",
+    img: "/images/UCF.webp",
+    company: "CDL Techrangers",
+    date: "Feb. 2026 - Present",
+    sentenceOne: "Incoming software engineer for UCF's CDL Techrangers!!!",
+    bg: "bg-sky-100/20",
+  },
   {
     name: "Lead Web Developer",
     img: "/images/KnightsRecords.jpg",
@@ -52,7 +71,7 @@ const experience = [
   },
 ];
 
-const keywords = [
+const keywords : string[] = [
   "React",
   "TypeScript",
   "Node.js",

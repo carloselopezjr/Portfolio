@@ -1,44 +1,21 @@
 import Image from "next/image";
 import { motion } from "motion/react";
 
-const Projects = [
-  /*
-  {
-    name: "GeoCity",
-    image: "/images/hLanding.png",
-    date: "Jan 2026 - Present",
-    stack: [
-      {
-        name: "TypeScript"
-      },
-      {
-        name: "React"
-      },
-      {
-        name: "Next.js"
-      },
-      {
-        name: "TailwindCSS"
-      },
-      {
-        name: "PostgreSQL"
-      },
-      {
-        name: "Prisma"
-      },
-      {
-        name: "tRPC"
-      },
-      {
-        name: "Some LLM idk yet"
-      },
-      {
-        name: "Weather API"
-      },
-    ],
-    description: "Inspired by GeoCities"
-  },
-  */
+// Get comfortable enforcing typesafety
+
+type techStack = {
+  name: string;
+}
+
+type Project = {
+  name: string;
+  image: string;
+  date: string;
+  stack: techStack[];
+  description: string;
+}
+
+const Projects : Project[] = [
   {
     name: "Chip-8 Emulator",
     image: "/images/tempChip8.png",
@@ -105,23 +82,18 @@ const Projects = [
     stack: [
       {
         name: "React",
-        img: "/images/react.svg",
       },
       {
         name: "Vite",
-        img: "/images/vite.svg",
       },
       {
         name: "TypeScript",
-        img: "/images/typescript.svg",
       },
       {
         name: "TailwindCSS",
-        img: "/images/tailwind.svg",
       },
       {
         name: "MongoDB",
-        img: "/images/mongo.svg",
       }
     ],
     description: "Currently developing UCF's Fashion Society website, showcasing their events, members, and mission to the UCF community."
@@ -134,27 +106,21 @@ const Projects = [
     stack: [
       {
         name: "React",
-        img: "/images/react.svg",
       },
       {
         name: "Next.js",
-        img: "/images/next.svg",
       },
       {
         name: "Three.js",
-        img: "/images/threejs.svg",
       },
       {
         name: "MediaPipe",
-        img: "/images/mediapipe.svg",
       },
       {
         name: "TailwindCSS",
-        img: "/images/tailwind.svg"
       },
       {
         name: "TypeScript",
-        img: "/images/typescript.svg",
       }
     ],
     description: "HandScape is an interactive 3D sandbox that allows users to spawn and manipulate virtual objects entirely through hand gestures. It recognizes five gestures that let users create, scale, rotate, and move objects in real time."
@@ -193,31 +159,24 @@ const Projects = [
     stack: [
       {
         name: "React",
-        img: "/images/react.svg",
       },
       {
         name: "TailwindCSS",
-        img: "/images/tailwind.svg",
       },
       {
         name: "TypeScript",
-        img: "/images/typescript.svg",
       },
       {
         name: "Next.js",
-        img: "/images/next.svg",
       },
       {
         name: "tRPC",
-        img: "/images/trpc.svg",
       },
       {
         name: "Drizzle",
-        img: "/images/drizzle.svg",
       },
       {
         name: "PostgreSQL",
-        img: "/images/postgreSQL.svg",
       },
     ],
     description:
@@ -230,23 +189,18 @@ const Projects = [
     stack: [
       {
         name: "Next.js",
-        img: "/images/next.svg",
       },
       {
         name: "TailwindCSS",
-        img: "/images/tailwind.svg",
       },
       {
         name: "TypeScript",
-        img: "/images/typescript.svg",
       },
       {
         name: "React",
-        img: "/images/react.svg",
       },
       {
         name: "LastFm",
-        img: "/images/lastFm.svg"
       }
     ],
     description:
@@ -333,18 +287,6 @@ export default function ProjectBox() {
             </div>
           </div>
 
-
-          {/* nothing
-          <div
-            className={`grid ${testArr.length === 3 ? "grid-cols-3" : "grid-cols-2"} gap-2 border-t border-orange-200/20 bg-orange-900/40 px-3 py-3`}
-          >
-            {testArr.map((arr) => (
-              <div key={arr.name} className="text-center text-sm font-medium rounded-xl border border-orange-200/30 py-2">
-                {arr.name}
-              </div>
-            ))}
-          </div>
-          */}
         </motion.div>
       ))}
     </div>

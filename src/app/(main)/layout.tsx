@@ -1,19 +1,8 @@
 import type { Metadata } from "next";
+
 import "./globals.css";
 import Navbar from "./components/navbar/nbar";
-import { Cinzel, EB_Garamond } from "next/font/google";
 import Background from "./components/backgrounds/bg";
-const cinzel = Cinzel({
-  subsets: ["latin"],
-  weight: ["400", "700"],
-  variable: "--font-cinzel",
-});
-
-const garamond = EB_Garamond({
-  subsets: ["latin"],
-  weight: ["400", "700"],
-  variable: "--font-garamond",
-});
 
 export const metadata: Metadata = 
 {
@@ -64,7 +53,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" className={`${cinzel.variable} ${garamond.variable} h-full min-h-screen`}>
+    <html lang="en" className={` h-full min-h-screen`}>
       <body className=" antialiased h-full overflow-x-hidden">
         <Background>
           <Navbar />

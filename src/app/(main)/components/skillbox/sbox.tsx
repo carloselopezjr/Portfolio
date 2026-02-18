@@ -1,8 +1,12 @@
 import Image from "next/image";
 import { motion } from "motion/react";
 
-// Add C++ , SQL, PostgreSQL, Java, Vite, Three.js, MediaPipe, MongoDB
-const Languages = [
+type skills = {
+  name: string;
+  icon: string;
+}
+
+const Languages : skills[] = [
   { name: "Python", icon: "images/python.svg" },
   { name: "C#", icon: "images/csharp.svg" },
   { name: "C++", icon: "images/cpp.svg" },
@@ -15,7 +19,7 @@ const Languages = [
   { name: "SQL", icon: "images/SQL.svg" }
 ];
 
-const FrameworksPackages = [
+const FrameworksPackages : skills[] = [
   { name: "React", icon: "images/react.svg" },
   { name: "Next.js", icon: "images/nextjs.svg" },
   { name: "Tailwind CSS", icon: "images/tailwind.svg" },
@@ -27,7 +31,7 @@ const FrameworksPackages = [
   { name: "Pandas", icon: "images/pandas.svg" },
 ];
 
-const Tools = [
+const Tools : skills[] = [
   { name: "Git", icon: "images/git.svg" },
   { name: "GitHub", icon: "images/GitHub_Invertocat_White.svg" },
   { name: "Visual Studio Code", icon: "images/vscode.svg" },
