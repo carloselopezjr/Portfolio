@@ -10,11 +10,10 @@ export default function Background({ children }: {children: React.ReactNode}) {
     pathname === "/" ? "bg-[url(/images/Winterness.webp)]"
     : pathname === "/projects" ? "bg-[url(/images/alien_red.webp)]"
     : pathname === "/experience" ? "bg-[url(/images/SkyBox.jpg)]"
-    : pathname === "/skills" ? "bg-[url(/images/StarryNight.webp)]"
     : pathname === "/about" ? "bg-[url(/images/sinister.jpg)]"
     : "";
 
-    return ( //                                                                         change min-h value to fix weird scroll later
+    return ( // change min-h value to fix weird scroll later
         <div className={` text-[#dfe6f3] antialiased ${background} bg-cover bg-center min-h-screen w-full bg-no-repeat `}>
             {children}
         </div>

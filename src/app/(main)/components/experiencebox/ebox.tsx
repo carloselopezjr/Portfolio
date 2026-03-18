@@ -1,7 +1,7 @@
 import Image from "next/image";
 import { motion } from "motion/react";
 
-type exp = {
+type Exp = {
   name: string;
   img: string;
   company: string;
@@ -12,7 +12,15 @@ type exp = {
   bg: string;
 }
 
-const experience : exp[] = [
+const experience: Exp[] = [
+  {
+    name: "Software Engineer Intern",
+    img: "/images/UCF.webp",
+    company: "Humana",
+    date: "May 2026 - Aug. 2026",
+    sentenceOne: "Incoming May 2026",
+    bg: "bg-sky-100/20",
+  },
   {
     name: "Software Engineer",
     img: "/images/UCF.webp",
@@ -71,7 +79,7 @@ const experience : exp[] = [
   },
 ];
 
-const keywords : string[] = [
+const keywords: string[] = [
   "React",
   "TypeScript",
   "Node.js",
@@ -149,7 +157,7 @@ export default function ExperienceBox() {
           </div>
         </motion.div>
       ))}
-      <div className="mt-12"/>
+      <div className="mt-12" />
     </div>
   );
 }

@@ -252,7 +252,7 @@ export default function ProjectBox() {
           initial={{ scale: 1, opacity: 0 }}
           animate={{ scale: 1, opacity: 1 }}
           transition={{ delay: index * 0.2, duration: 1, ease: "easeInOut" }}
-          className="group border-2 border-orange-300/30 flex flex-col rounded-2xl bg-orange-800/70 backdrop-blur-md shadow-lg hover:transition-all hover:duration-300 hover:ease-in-out hover:shadow-[0_0_12px_#e3612f] hover:border-[#e3612f] overflow-hidden max-h-[400px] hover:max-h-[900px]"
+          className="group border-2 border-orange-300/30 flex flex-col rounded-2xl bg-orange-800/70 backdrop-blur-md shadow-lg hover:transition-all hover:duration-300 hover:ease-in-out hover:shadow-[0_0_12px_#e3612f] hover:border-[#e3612f] overflow-hidden max-h-[400px]"
         >
           <Image
             key={proj.name}
@@ -271,7 +271,7 @@ export default function ProjectBox() {
               </div>
             </div>
 
-            <p className="text-sm text-left text-orange-50/90 line-clamp-3 group-hover:line-clamp-none transition-[line-height] duration-300 ease-in-out">
+            <p className="text-sm text-left text-orange-50/90 line-clamp-3 duration-300 ease-in-out">
               {proj.description}
             </p>
 

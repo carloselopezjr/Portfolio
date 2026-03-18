@@ -6,7 +6,7 @@ import Background from "./components/backgrounds/bg";
 
 export const metadata: Metadata = 
 {
-  title: "Carlos Lopez", // Carlos E Lopez or Carlos Lopez idk
+  title: "Carlos Lopez",
   description: "Computer Science student passionate about building full-stack web apps, developer tools, and interactive projects!",
   keywords: [
     "Carlos Lopez",
