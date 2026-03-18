@@ -1,18 +1,13 @@
+@import url('https://fonts.googleapis.com/css2?family=Geist+Mono:wght@400;500;600&display=swap');
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --background: #1c345b;
-  --foreground: #171717;
-}
-
-
-
 @layer base {
- body {
-  color: var(--foreground);
-  background: var(--background);
-  font-family:  var(--font-garamond), serif;
+  body {
+    font-family: "Geist Mono", monospace;
+    background: #1c345b;
+    color: #e5e7eb;
   }
 }

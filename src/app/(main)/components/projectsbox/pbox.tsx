@@ -1,129 +1,182 @@
 import Image from "next/image";
 import { motion } from "motion/react";
 
-const Projects = [
+// Get comfortable enforcing typesafety
+
+type techStack = {
+  name: string;
+}
+
+type Project = {
+  name: string;
+  image: string;
+  date: string;
+  stack: techStack[];
+  description: string;
+}
+
+const Projects : Project[] = [
+  {
+    name: "Chip-8 Emulator",
+    image: "/images/tempChip8.png",
+    date: "Dec 2025 - Present",
+    stack: [
+      {
+        name: "C++"
+      },
+      {
+        name: "SDL2"
+      },
+    ],
+    description: "A simple Chip-8 emulator built in C++ using the SDL2 library for graphics and input handling."
+  },
+  {
+    name: "I'm Human",
+    image: "/images/hLanding.png",
+    date: "Nov 2025",
+    stack: [
+      {
+        name: "React"
+      },
+      {
+        name: "Next.js"
+      },
+      {
+        name: "TypeScript"
+      },
+      {
+        name: "TailwindCSS"
+      },
+      {
+        name: "PostgreSQL"
+      },
+      {
+        name: "Prisma"
+      }
+    ],
+    description: "Made a really annoying login for Hack Jam 2025's Worst UI Challenge."
+  },
+  /* Remove for now
+  {
+    name: "Fih",
+    image: "/images/fsLanding.png",
+    date: "Nov 2025 - Present",
+    stack: [
+      {
+        name: "Godot"
+      },
+      {
+        name: "GDScript",
+      },
+      {
+        name: "Itch.io"
+      },
+    ],
+    description: "Sharkbyte 2025",
+  },
+  */
   {
     name: "Fashion Society",
-    image: "/images/fs.png",
+    image: "/images/fsLanding.png",
     date: "Oct 2025 - Present",
     stack: [
       {
         name: "React",
-        img: "/images/react.svg",
       },
       {
         name: "Vite",
-        img: "/images/vite.svg",
       },
       {
         name: "TypeScript",
-        img: "/images/typescript.svg",
       },
       {
         name: "TailwindCSS",
-        img: "/images/tailwind.svg",
       },
       {
         name: "MongoDB",
-        img: "/images/mongo.svg",
       }
     ],
     description: "Currently developing UCF's Fashion Society website, showcasing their events, members, and mission to the UCF community."
   },
-  
+
   {
     name: "HandScape",
-    image: "/images/handscape.png",
-    date: "Sept 2025 - Sept 2025",
+    image: "/images/handscapeLanding.png",
+    date: "Sept 2025",
     stack: [
       {
         name: "React",
-        img: "/images/react.svg",
       },
       {
         name: "Next.js",
-        img: "/images/next.svg",
       },
       {
         name: "Three.js",
-        img: "/images/threejs.svg",
       },
       {
         name: "MediaPipe",
-        img: "/images/mediapipe.svg",
       },
       {
         name: "TailwindCSS",
-        img: "/images/tailwind.svg"
       },
       {
         name: "TypeScript",
-        img: "/images/typescript.svg",
       }
     ],
     description: "HandScape is an interactive 3D sandbox that allows users to spawn and manipulate virtual objects entirely through hand gestures. It recognizes five gestures that let users create, scale, rotate, and move objects in real time."
   },
   {
     name: "Riffs",
-    image: "/images/riffs.png",
-    date: "Apr 2025 - Apr 2025",
+    image: "/images/riffsLanding.png",
+    date: "Apr 2025",
     stack: [
       {
         name: "TypeScript",
-        img: "/images/typescript.svg",
       },
       {
         name: "TailwindCSS",
-        img: "/images/tailwind.svg",
       },
       {
         name: "React",
-        img: "/images/react.svg",
       },
       {
         name: "Next.js",
-        img: "/images/next.svg",
       },
       {
         name: "FL Studio",
-        img: "/images/flstudio.webp",
       },
+      {
+        name: "Pitchy API"
+      }
     ],
     description:
       "     Riffs is a creative music app where you can hum a melody, convert it into guitar tabs, edit it, and jam out in a Guitar Hero-style game-play experience.",
   },
   {
     name: "Kmodo",
-    image: "/images/kmodo.webp",
+    image: "/images/kmodoLanding.png",
     date: "Jan 2025 - May 2025",
     stack: [
       {
         name: "React",
-        img: "/images/react.svg",
       },
       {
         name: "TailwindCSS",
-        img: "/images/tailwind.svg",
       },
       {
         name: "TypeScript",
-        img: "/images/typescript.svg",
       },
       {
         name: "Next.js",
-        img: "/images/next.svg",
       },
       {
         name: "tRPC",
-        img: "/images/trpc.svg",
       },
       {
         name: "Drizzle",
-        img: "/images/drizzle.svg",
       },
       {
         name: "PostgreSQL",
-        img: "/images/postgreSQL.svg",
       },
     ],
     description:
@@ -131,36 +184,33 @@ const Projects = [
   },
   {
     name: "My Portfolio",
-    image: "/images/avatar.webp",
+    image: "/images/portLanding.png",
     date: "Jan 2025 - Present",
     stack: [
       {
         name: "Next.js",
-        img: "/images/next.svg",
       },
       {
         name: "TailwindCSS",
-        img: "/images/tailwind.svg",
       },
       {
         name: "TypeScript",
-        img: "/images/typescript.svg",
       },
       {
         name: "React",
-        img: "/images/react.svg",
       },
-      { name: "LastFm",
-        img: "/images/lastFm.svg"
+      {
+        name: "LastFm",
       }
     ],
     description:
       "This is my personal portfolio, showcasing everything I've done so far in my journey. I have learned so much while building this, and it has become my pride and joy. I hope you enjoy it as much as I do. ",
   },
+  /*
   {
     name: "Spark-A-Hack",
     image: "/images/spark-a-hack.webp",
-    date: "Sep 2024 - Nov 2024",
+    date: "Oct 2024",
     stack: [
       {
         name: "Gemini API",
@@ -190,53 +240,53 @@ const Projects = [
     description:
       "Spark-A-Hack was my first Hackathon project. It leverages Gemini's API to generate winning hackathon project ideas based on over 30,000 winning submissions from DevPost. ",
   },
+  */
 ];
 
 export default function ProjectBox() {
   return (
-    <div className="flex lg:mt-10 lg:flex lg:flex-row justify-center w-full flex-wrap">
+    <div className="mx-auto max-w-[1016px] grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 mt-6 mb-12">
       {Projects.map((proj, index) => (
         <motion.div
           key={proj.name}
           initial={{ scale: 1, opacity: 0 }}
           animate={{ scale: 1, opacity: 1 }}
           transition={{ delay: index * 0.2, duration: 1, ease: "easeInOut" }}
-          className="w-[350px] h-[350px] m-2 lg:scale-110 lg:relative group lg:w-[250px] lg:h-[300px] border-2 border-[#9a4129] rounded-xl flex overflow-hidden backdrop-blur-md shadow-xl hover:transition-all hover:duration-300 hover:ease-in-out hover:scale-125 hover:shadow-[0_0_12px_#e3612f] hover:border-[#e3612f]"
+          className="group border-2 border-orange-300/30 flex flex-col rounded-2xl bg-orange-800/70 backdrop-blur-md shadow-lg hover:transition-all hover:duration-300 hover:ease-in-out hover:shadow-[0_0_12px_#e3612f] hover:border-[#e3612f] overflow-hidden max-h-[400px]"
         >
-          {/* actual box  */}
-          <div className="lg:pb-12 flex flex-col items-center justify-center h-full w-full hover:blur-sm">
-            <Image
-              className="rounded-xl"
-              src={proj.image}
-              alt={proj.name}
-              width={150}
-              height={150}
-            />
-            <h1 className="text-3xl lg:text-xl font-bold mt-2 text-black">{proj.name}</h1>
-            <h2 className="text-xl lg:text-md font-semibold text-gray-800">{proj.date}</h2>
-          </div>
-          {/* hover show desc */}
-          <div className="inset-0 absolute bg-[url(/images/TheUtterEast.webp)] bg-blur bg-opacity-100 text-black opacity-0 group-hover:opacity-100 transition-opacity duration-300 p-4 text-[13px]">
-            <div className="p-1 h-full font-semibold text-left text-xl lg:text-sm">
+          <Image
+            key={proj.name}
+            src={proj.image}
+            alt={proj.name}
+            height={250}
+            width={420}
+            className="w-full object-cover"
+          />
+
+          <div className="flex-1 flex flex-col gap-4 p-4">
+            <div className="flex items-start justify-between gap-3">
+              <div className="space-y-1">
+                <h2 className="text-xl font-semibold leading-tight text-left">{proj.name}</h2>
+                <p className="text-xs text-orange-50/80 underline underline-offset-4 text-left">{proj.date}</p>
+              </div>
+            </div>
+
+            <p className="text-sm text-left text-orange-50/90 line-clamp-3 duration-300 ease-in-out">
               {proj.description}
-              {proj.stack && Array.isArray(proj.stack) && (
-                <div className="mt-6 grid grid-cols-4 gap-2 place-items-center">
-                  {proj.stack.map((st, index) => (
-                    <div key={index} title={st.name} className="">
-                      {" "}
-                      {/* customize tooltip soon */}
-                      <Image
-                        src={st.img}
-                        alt={st.name}
-                        width={45}
-                        height={45}
-                      />
-                    </div>
-                  ))}
-                </div>
-              )}
+            </p>
+
+            <div className="flex flex-wrap gap-2">
+              {proj.stack.map((techStack) => (
+                <span
+                  key={techStack.name}
+                  className="text-[10px] px-3 py-1 rounded-full border border-orange-200/40 bg-orange-900/70"
+                >
+                  {techStack.name}
+                </span>
+              ))}
             </div>
           </div>
+
         </motion.div>
       ))}
     </div>

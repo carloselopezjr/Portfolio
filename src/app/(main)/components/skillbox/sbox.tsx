@@ -1,8 +1,12 @@
 import Image from "next/image";
 import { motion } from "motion/react";
 
-// Add C++ , SQL, PostgreSQL, Java, Vite, Three.js, MediaPipe, MongoDB
-const Languages = [
+type skills = {
+  name: string;
+  icon: string;
+}
+
+const Languages : skills[] = [
   { name: "Python", icon: "images/python.svg" },
   { name: "C#", icon: "images/csharp.svg" },
   { name: "C++", icon: "images/cpp.svg" },
@@ -12,147 +16,116 @@ const Languages = [
   { name: "JavaScript", icon: "images/javascript.svg" },
   { name: "TypeScript", icon: "images/typescript.svg" },
   { name: "Java", icon: "images/java.svg" },
-  { name: "SQL", icon: "images/SQL.svg"}
+  { name: "SQL", icon: "images/SQL.svg" }
 ];
 
-const FrameworksPackages = [
+const FrameworksPackages : skills[] = [
   { name: "React", icon: "images/react.svg" },
   { name: "Next.js", icon: "images/nextjs.svg" },
-  { name: "Tailwind CSS", icon: "images/tailwind.svg" }, 
-  { name: ".Net", icon: "images/NET.svg" },
+  { name: "Tailwind CSS", icon: "images/tailwind.svg" },
+  { name: ".NET", icon: "images/NET.svg" },
   { name: "Node.js", icon: "images/node.svg" },
   { name: "Vite", icon: "images/vite.svg" },
   { name: "Three.js", icon: "images/threejs.svg" },
+  { name: "MediaPipe", icon: "images/mediapipe.svg" },
+  { name: "Pandas", icon: "images/pandas.svg" },
 ];
 
-const Tools = [
+const Tools : skills[] = [
   { name: "Git", icon: "images/git.svg" },
-  { name: "GitHub", icon: "images/github.svg" },
+  { name: "GitHub", icon: "images/GitHub_Invertocat_White.svg" },
   { name: "Visual Studio Code", icon: "images/vscode.svg" },
   { name: "Figma", icon: "images/figma.svg" },
   { name: "Vercel", icon: "images/vercel.svg" },
-  { name: "Blender", icon: "/images/blender.svg" },
   { name: "Linux", icon: "images/Linux.svg" },
-  { name: "Unity", icon: "images/unity.svg"},
-  { name: "Oracle VirtualBox", icon: "images/VirtualBox.svg"},
-  { name: "PostgreSQL", icon: "images/postgreSQL.svg"}
+  { name: "Unity", icon: "images/unity.svg" },
+  { name: "VirtualBox", icon: "images/VirtualBox.svg" },
+  { name: "PostgreSQL", icon: "images/postgreSQL.svg" }
 ];
 
 export default function SkillBox() {
   return (
-    <div className="lg:scale-90 flex flex-col w-full">
-      <div className="flex flex-col lg:flex-row gap-4 w-full">
-        {/* Languages */}
-        <motion.div
-          // box
-          className="flex-1 text-center rounded-xl border-2 border-[#232234] backdrop-blur-md p-4 m-4 lg:m-0 shadow-lg justify-center"
-          initial={{ opacity: 0 }}
-          animate={{ opacity: 1 }}
-          transition={{ duration: 1, ease: "easeInOut" }}
-        >
-          <h1 className="font-bold text-4xl mb-4">Languages</h1>
-          <motion.div
-            className="grid grid-cols-3 gap-1 lg:grid-cols-5 lg:gap-2 place-items-center"
-            initial={{ opacity: 0 }}
-            animate={{ opacity: 1 }}
-            transition={{ duration: 0.5, ease: "easeInOut" }}
-          >
-            {Languages.map((lang, index) => (
-              <motion.div
-                key={index}
-                className="p-4 rounded-xl bg-gray-950 bg-opacity-60 border-[#616e93] border-2 hover:bg-gray-900 hover:transition-all hover:duration-300 hover:ease-in-out hover:scale-110 hover:border-[#7b8ba8] hover:bg-opacity-60"
-                initial={{ opacity: 0 }}
-                animate={{ opacity: 1 }}
-                transition={{
-                  delay: index * 0.2,
-                  duration: 0.5,
-                  ease: "easeInOut",
-                }}
-              >
-                <Image
-                  src={lang.icon}
-                  alt={lang.name}
-                  title={lang.name}
-                  width={75}
-                  height={75}
-                  className={`${lang.name === "C" ? "scale-110" : ""}`}
-                />
-              </motion.div>
-            ))}
-          </motion.div>
-        </motion.div>
 
-        {/* Frameworks/Packages */}
-        <motion.div
-          // box
-          className="flex-1 text-center rounded-xl border-2 border-[#232234] backdrop-blur-md p-4 m-4 lg:m-0 shadow-lg justify-center"
-          
-          initial={{ opacity: 0 }}
-          animate={{ opacity: 1 }}
-          transition={{ duration: 0.5, ease: "easeInOut" }}
-        >
-          <h1 className="font-bold text-4xl mb-4">Frameworks/Packages</h1>
-          <div className="grid grid-cols-3 gap-1 lg:grid-cols-5 lg:gap-2 place-items-center">
-            {FrameworksPackages.map((fpack, index) => (
-              <motion.div
-                key={index}
-                className="p-4 rounded-xl bg-gray-950 border-[#616e93] bg-opacity-60 border-2 hover:bg-gray-900 hover:transition-all hover:duration-300 hover:ease-in-out hover:scale-110 hover:border-[#7b8ba8] hover:bg-opacity-60"
-                initial={{ opacity: 0 }}
-                animate={{ opacity: 1 }}
-                transition={{
-                  delay: index * 0.2,
-                  duration: 0.5,
-                  ease: "easeInOut",
-                }}
-              >
-                <Image
-                  src={fpack.icon}
-                  alt={fpack.name}
-                  title={fpack.name}
-                  className={`${fpack.name === "Tailwind CSS" ? "w-20 h-[75px]" : ""}`}
-                  width={75}
-                  height={75}
-                />
-              </motion.div>
-            ))}
-          </div>
-        </motion.div>
-      </div>
-
-      {/* Tools */}
-      <motion.div
-        // box
-        className=" flex-1 text-center rounded-xl border-2 border-[#232234] backdrop-blur-md p-4 m-4 lg:m-0 lg:mt-4 shadow-lg justify-center lg:w-[49.5%]"
-        initial={{ opacity: 0 }}
-        animate={{ opacity: 1 }}
-        transition={{ duration: 0.5, ease: "easeInOut" }}
-      >
-        <h1 className="font-bold text-4xl mb-4">Developer Tools</h1>
-        <div className="grid grid-cols-3 gap-1 lg:grid-cols-5 lg:gap-2 place-items-center">
-          {Tools.map((tool, index) => (
+    <div className="mt-8 grid grid-cols-3 mx-20 min-h-screen">
+      <div className="">
+        <h1 className="font-semibold text-2xl">
+          Languages
+        </h1>
+        <div className="grid grid-cols-3 gap-2 place-items-center mx-[56px] mt-3">
+          {Languages.map((lang, index) => (
             <motion.div
-              key={index}
-              className="p-4 rounded-xl bg-gray-950 bg-opacity-60 border-[#616e93] border-2 hover:bg-gray-900 hover:transition-all hover:duration-300 hover:ease-in-out hover:scale-110 hover:border-[#7b8ba8] hover:bg-opacity-60"
-              initial={{ opacity: 0 }}
-              animate={{ opacity: 1 }}
-              transition={{
-                delay: index * 0.2,
-                duration: 0.5,
-                ease: "easeInOut",
-              }}
-            >
+                      key={lang.name}
+                      initial={{ opacity: 0, scale: 0.95 }}
+                      whileInView={{ opacity: 1, scale: 1 }}
+                      transition={{ delay: index * 0.1, duration: 0.5, ease: "easeInOut" }}
+                      viewport={{ once: true, margin: "-50px" }}
+                      className="group relative w-20 h-20 bg-[#262531] border-2 border-[#616E93] rounded-xl flex flex-col items-center justify-center hover:scale-105 hover:shadow-[0_0_12px_#616E93] hover:transition-all hover:duration-300 hover:ease-in-out">
               <Image
-                src={tool.icon}
-                alt={tool.name}
-                title={tool.name}
-                width={75}
-                height={75}
-                className={`${tool.name === "Blender" ? "w-20 h-[75px]" : tool.name === "Linux" ? "w-20 h-[75px]" : tool.name ==="Vercel" ? "w-20 h-[75px]" : tool.name === "Unity" ? "w-20 h-[75px]" : tool.name === "Oracle VirtualBox" ? "w-20 h-[75px]" : ""}`}
+                src={lang.icon}
+                alt={lang.name}
+                width={52.5}
+                height={52.5}
               />
+              <span className="absolute -top-10 left-1/2 -translate-x-1/2 border bg-[#262531] border-[#616E93] text-white text-xs px-2 py-1 rounded opacity-0 group-hover:opacity-100 transition-opacity duration-300 whitespace-nowrap">
+                {lang.name}
+              </span>
             </motion.div>
           ))}
         </div>
-      </motion.div>
+      </div>
+      <div>
+        <h1 className="font-semibold text-2xl">
+          Frameworks & Packages
+        </h1>
+        <div className="grid grid-cols-3 gap-2 place-items-center mx-[56px] mt-3">
+          {FrameworksPackages.map((framework, index) => (
+            <motion.div
+              key={framework.name}
+              initial={{ opacity: 0, scale: 0.95 }}
+              whileInView={{ opacity: 1, scale: 1 }}
+              transition={{ delay: index * 0.1, duration: 0.5, ease: "easeInOut" }}
+              viewport={{ once: true, margin: "-50px" }}
+              className="group relative w-20 h-20 bg-[#262531] border-2 border-[#616E93] rounded-xl flex flex-col items-center justify-center hover:scale-105 hover:shadow-[0_0_12px_#616E93] hover:transition-all hover:duration-300 hover:ease-in-out">
+              <Image
+                src={framework.icon}
+                alt={framework.name}
+                width={52.5}
+                height={52.5}
+              />
+              <span className="absolute -top-10 left-1/2 -translate-x-1/2 border bg-[#262531] border-[#616E93] text-white text-xs px-2 py-1 rounded opacity-0 group-hover:opacity-100 transition-opacity duration-300 whitespace-nowrap">
+                {framework.name}
+              </span>
+            </motion.div>
+          ))}
+        </div>
+      </div>
+      <div>
+        <h1 className="font-semibold text-2xl">
+          Tools
+        </h1>
+        <div className="grid grid-cols-3 gap-2 place-items-center mx-[56px] mt-3">
+          {Tools.map((tool, index) => (
+            <motion.div
+              key={tool.name}
+              initial={{ opacity: 0, scale: 0.95 }}
+              whileInView={{ opacity: 1, scale: 1 }}
+              transition={{ delay: index * 0.1, duration: 0.5, ease: "easeInOut" }}
+              viewport={{ once: true, margin: "-50px" }}
+              className="group relative w-20 h-20 bg-[#262531] border-2 border-[#616E93] rounded-xl flex flex-col items-center justify-center hover:scale-105 hover:shadow-[0_0_12px_#616E93] hover:transition-all hover:duration-300 hover:ease-in-out">
+              <Image
+                src={tool.icon}
+                alt={tool.name}
+                width={52.5}
+                height={52.5}
+              />
+              <span className="absolute -top-10 left-1/2 -translate-x-1/2 border bg-[#262531] border-[#616E93] text-white text-xs px-2 py-1 rounded opacity-0 group-hover:opacity-100 transition-opacity duration-300 whitespace-nowrap">
+                {tool.name}
+              </span>
+            </motion.div>
+          ))}
+        </div>
+      </div>
     </div>
+
   );
 }

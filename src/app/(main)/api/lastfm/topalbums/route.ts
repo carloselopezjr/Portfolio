@@ -1,8 +1,22 @@
 import { NextResponse } from "next/server";
 
+// I feel so smart for being typesafe :thumbsup:
+type Album = {
+    name: string;
+    artist: {
+        name: string;
+    }
+    image: {
+        "#text"?: string;
+    }[];
+    playcount: number;
+    url: string;
+}
+
 export async function GET() {
     const apiKey = process.env.LASTFM_API_KEY!;
     const username = process.env.LASTFM_USERNAME!;
+
 
     const query = new URLSearchParams({
         method: "user.gettopalbums",
@@ -15,9 +29,8 @@ export async function GET() {
 
     const res = await fetch(`https://ws.audioscrobbler.com/2.0/?${query}`);
     const data = await res.json();
-    
-    // eslint-disable-next-line @typescript-eslint/no-explicit-any
-    const albums = data.topalbums.album.map((album: any) => ({
+
+    const albums = data.topalbums.album.map((album: Album) => ({
         name: album.name,
         artist: album.artist.name,
         image: album.image[2]?.["#text"], // medium sized image
